@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SeekFox:  Fichier source de FIFO.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SeekFox
+   </div>
+   <div id="projectbrief">Partie 1 - Moteur de recherche</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">FIFO.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dd/d35/_f_i_f_o_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FIFO_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FIFO_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d9/df7/struct_ma_cellule.html">    7</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d9/df7/struct_ma_cellule.html">MaCellule</a>{</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../d9/df7/struct_ma_cellule.html#ac41e3393154b2f50a90c38b9075be81e">    8</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="../../d9/df7/struct_ma_cellule.html#ac41e3393154b2f50a90c38b9075be81e">e</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d9/df7/struct_ma_cellule.html#ac44a64552ce4f30a9212da822d3effc3">    9</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d9/df7/struct_ma_cellule.html">MaCellule</a> *<a class="code" href="../../d9/df7/struct_ma_cellule.html#ac44a64552ce4f30a9212da822d3effc3">ptr_suiv</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}<a class="code" href="../../dd/d35/_f_i_f_o_8h.html#a72493adebf63c4da04643b496aee243c">Cell</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../db/d6b/struct_ma_fifo.html">   12</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../db/d6b/struct_ma_fifo.html">MaFifo</a>{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../db/d6b/struct_ma_fifo.html#afa4bbbaf2182675b7b080f250ffa584f">   13</a></span>&#160;    <a class="code" href="../../d9/df7/struct_ma_cellule.html">Cell</a> *<a class="code" href="../../db/d6b/struct_ma_fifo.html#a1e7800e1febbe4c5e632b97b897c6517">debut_file</a>, *<a class="code" href="../../db/d6b/struct_ma_fifo.html#afa4bbbaf2182675b7b080f250ffa584f">fin_file</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}<a class="code" href="../../dd/d35/_f_i_f_o_8h.html#af4a6c5cdc7332c71f513f8414417df55">FIFO</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d35/_f_i_f_o_8h.html#a69f2b3f4c02e3225d59e2455f46b198e">Init_File</a>(<a class="code" href="../../db/d6b/struct_ma_fifo.html">FIFO</a> f);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d35/_f_i_f_o_8h.html#a1cbddf6afcbc2637c863ccd5d9c946bc">Affiche_file</a>(<a class="code" href="../../db/d6b/struct_ma_fifo.html">FIFO</a> *f);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../dd/d35/_f_i_f_o_8h.html#a74350eedbd139a8f462465e183429824">File_estVide</a>(<a class="code" href="../../db/d6b/struct_ma_fifo.html">FIFO</a> f);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="../../db/d6b/struct_ma_fifo.html">FIFO</a> <a class="code" href="../../dd/d35/_f_i_f_o_8h.html#a253ab685563e8a712bda16a87ffeb96f">Enfiler</a>(<a class="code" href="../../db/d6b/struct_ma_fifo.html">FIFO</a> *f, <span class="keywordtype">char</span> e);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<a class="code" href="../../db/d6b/struct_ma_fifo.html">FIFO</a> <a class="code" href="../../dd/d35/_f_i_f_o_8h.html#a2c6e21b84a2c21c27df2bb263b548c2f">Defiler</a>(<a class="code" href="../../db/d6b/struct_ma_fifo.html">FIFO</a> *f, <span class="keywordtype">char</span> *adr);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../dd/d35/_f_i_f_o_8h.html#a92137121fb5a760c872b903b45062720">FIFO_diff</a>(<a class="code" href="../../db/d6b/struct_ma_fifo.html">FIFO</a> *f1, <a class="code" href="../../db/d6b/struct_ma_fifo.html">FIFO</a> *f2);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct_ma_fifo_html_afa4bbbaf2182675b7b080f250ffa584f"><div class="ttname"><a href="../../db/d6b/struct_ma_fifo.html#afa4bbbaf2182675b7b080f250ffa584f">MaFifo::fin_file</a></div><div class="ttdeci">Cell * fin_file</div><div class="ttdef"><b>Definition:</b> FIFO.h:13</div></div>
+<div class="ttc" id="a_f_i_f_o_8h_html_a92137121fb5a760c872b903b45062720"><div class="ttname"><a href="../../dd/d35/_f_i_f_o_8h.html#a92137121fb5a760c872b903b45062720">FIFO_diff</a></div><div class="ttdeci">int FIFO_diff(FIFO *f1, FIFO *f2)</div><div class="ttdef"><b>Definition:</b> FIFO.c:69</div></div>
+<div class="ttc" id="astruct_ma_cellule_html_ac44a64552ce4f30a9212da822d3effc3"><div class="ttname"><a href="../../d9/df7/struct_ma_cellule.html#ac44a64552ce4f30a9212da822d3effc3">MaCellule::ptr_suiv</a></div><div class="ttdeci">struct MaCellule * ptr_suiv</div><div class="ttdef"><b>Definition:</b> FIFO.h:9</div></div>
+<div class="ttc" id="astruct_ma_fifo_html_a1e7800e1febbe4c5e632b97b897c6517"><div class="ttname"><a href="../../db/d6b/struct_ma_fifo.html#a1e7800e1febbe4c5e632b97b897c6517">MaFifo::debut_file</a></div><div class="ttdeci">Cell * debut_file</div><div class="ttdef"><b>Definition:</b> FIFO.h:13</div></div>
+<div class="ttc" id="astruct_ma_cellule_html_ac41e3393154b2f50a90c38b9075be81e"><div class="ttname"><a href="../../d9/df7/struct_ma_cellule.html#ac41e3393154b2f50a90c38b9075be81e">MaCellule::e</a></div><div class="ttdeci">char e</div><div class="ttdef"><b>Definition:</b> FIFO.h:8</div></div>
+<div class="ttc" id="a_f_i_f_o_8h_html_a69f2b3f4c02e3225d59e2455f46b198e"><div class="ttname"><a href="../../dd/d35/_f_i_f_o_8h.html#a69f2b3f4c02e3225d59e2455f46b198e">Init_File</a></div><div class="ttdeci">void Init_File(FIFO f)</div><div class="ttdef"><b>Definition:</b> FIFO.c:16</div></div>
+<div class="ttc" id="astruct_ma_fifo_html"><div class="ttname"><a href="../../db/d6b/struct_ma_fifo.html">MaFifo</a></div><div class="ttdef"><b>Definition:</b> FIFO.h:12</div></div>
+<div class="ttc" id="a_f_i_f_o_8h_html_a72493adebf63c4da04643b496aee243c"><div class="ttname"><a href="../../dd/d35/_f_i_f_o_8h.html#a72493adebf63c4da04643b496aee243c">Cell</a></div><div class="ttdeci">struct MaCellule Cell</div></div>
+<div class="ttc" id="a_f_i_f_o_8h_html_a1cbddf6afcbc2637c863ccd5d9c946bc"><div class="ttname"><a href="../../dd/d35/_f_i_f_o_8h.html#a1cbddf6afcbc2637c863ccd5d9c946bc">Affiche_file</a></div><div class="ttdeci">void Affiche_file(FIFO *f)</div><div class="ttdef"><b>Definition:</b> FIFO.c:21</div></div>
+<div class="ttc" id="astruct_ma_cellule_html"><div class="ttname"><a href="../../d9/df7/struct_ma_cellule.html">MaCellule</a></div><div class="ttdef"><b>Definition:</b> FIFO.h:7</div></div>
+<div class="ttc" id="a_f_i_f_o_8h_html_a2c6e21b84a2c21c27df2bb263b548c2f"><div class="ttname"><a href="../../dd/d35/_f_i_f_o_8h.html#a2c6e21b84a2c21c27df2bb263b548c2f">Defiler</a></div><div class="ttdeci">FIFO Defiler(FIFO *f, char *adr)</div><div class="ttdef"><b>Definition:</b> FIFO.c:56</div></div>
+<div class="ttc" id="a_f_i_f_o_8h_html_af4a6c5cdc7332c71f513f8414417df55"><div class="ttname"><a href="../../dd/d35/_f_i_f_o_8h.html#af4a6c5cdc7332c71f513f8414417df55">FIFO</a></div><div class="ttdeci">struct MaFifo FIFO</div></div>
+<div class="ttc" id="a_f_i_f_o_8h_html_a74350eedbd139a8f462465e183429824"><div class="ttname"><a href="../../dd/d35/_f_i_f_o_8h.html#a74350eedbd139a8f462465e183429824">File_estVide</a></div><div class="ttdeci">int File_estVide(FIFO f)</div><div class="ttdef"><b>Definition:</b> FIFO.c:34</div></div>
+<div class="ttc" id="a_f_i_f_o_8h_html_a253ab685563e8a712bda16a87ffeb96f"><div class="ttname"><a href="../../dd/d35/_f_i_f_o_8h.html#a253ab685563e8a712bda16a87ffeb96f">Enfiler</a></div><div class="ttdeci">FIFO Enfiler(FIFO *f, char e)</div><div class="ttdef"><b>Definition:</b> FIFO.c:38</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

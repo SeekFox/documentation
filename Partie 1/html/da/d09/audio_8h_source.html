@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SeekFox:  Fichier source de audio.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SeekFox
+   </div>
+   <div id="projectbrief">Partie 1 - Moteur de recherche</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">audio.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/d09/audio_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef AUDIO_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define AUDIO_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../include/pile_dynamiqueAudio.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../da/d09/audio_8h.html#a372bdc8f3de4d2fa1ca5e94a344d8666">   16</a></span>&#160;<span class="preprocessor">#define WAV_OFFSET 56</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../da/d09/audio_8h.html#af7b0887c99d5bd54351fa1267fda6ad8">   18</a></span>&#160;<span class="preprocessor">#define TXT_FILE 2</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../da/d09/audio_8h.html#a98c3ed44ff10c1cdbeedc7dbf6a252aa">   19</a></span>&#160;<span class="preprocessor">#define WAV_FILE 1</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../da/d09/audio_8h.html#ad97d124820928ebcddef94b30e172173">   20</a></span>&#160;<span class="preprocessor">#define BIN_FILE 0</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d6/d6b/struct_fenetre.html">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d6/d6b/struct_fenetre.html">Fenetre</a>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d6/d6b/struct_fenetre.html#a07db5738d854b7ed98e65746fa32abbb">   25</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="../../d6/d6b/struct_fenetre.html#a07db5738d854b7ed98e65746fa32abbb">name</a>; <span class="comment">// de 0 a plein, correspond a sa position dans le fichier / taille fenetre</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d6/d6b/struct_fenetre.html#aa34892e3ff59c063e6dad53944ec16a5">   26</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d6/d6b/struct_fenetre.html">Fenetre</a>* <a class="code" href="../../d6/d6b/struct_fenetre.html#aa34892e3ff59c063e6dad53944ec16a5">nextFenetre</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d6/d6b/struct_fenetre.html#a54c77961f3acf24efa9fa832aedac099">   27</a></span>&#160;    <a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> <a class="code" href="../../d6/d6b/struct_fenetre.html#a54c77961f3acf24efa9fa832aedac099">subdivision</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}<a class="code" href="../../da/d09/audio_8h.html#a4b5f791ddc0c17965b8b40162a61f7a8">Fenetre</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../da/d09/audio_8h.html#a8804b3471af9e419fb983e96c37030cb">   30</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../d6/d6b/struct_fenetre.html">Fenetre</a>* <a class="code" href="../../da/d09/audio_8h.html#a8804b3471af9e419fb983e96c37030cb">Histogramme</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d8/da7/structaudio_desc.html">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d8/da7/structaudio_desc.html">audioDesc</a>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d8/da7/structaudio_desc.html#a786b7db6f1e42a565216cefffdc60092">   33</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d8/da7/structaudio_desc.html#a786b7db6f1e42a565216cefffdc60092">nbSubdivisions</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d8/da7/structaudio_desc.html#af098efa88fbe8ccbfaff1633715a970e">   34</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d8/da7/structaudio_desc.html#af098efa88fbe8ccbfaff1633715a970e">tailleFenetre</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d8/da7/structaudio_desc.html#aa6852b7fab3f669383075bba0a310aad">   35</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="../../d8/da7/structaudio_desc.html#aa6852b7fab3f669383075bba0a310aad">nbFenetres</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d8/da7/structaudio_desc.html#ad11bae20136bb62176c103749961cc84">   36</a></span>&#160;    <a class="code" href="../../d6/d6b/struct_fenetre.html">Histogramme</a> <a class="code" href="../../d8/da7/structaudio_desc.html#ad11bae20136bb62176c103749961cc84">data</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}<a class="code" href="../../da/d09/audio_8h.html#a861dfd6af00a8e38ec3cf11780cda3b9">DescripteurAudio</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="../../d6/d6b/struct_fenetre.html">Histogramme</a> <a class="code" href="../../da/d09/audio_8h.html#aedddeaf44b798c2060d0f860d99e71aa">initHistogramme</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="../../d6/d6b/struct_fenetre.html">Histogramme</a> <a class="code" href="../../da/d09/audio_8h.html#a4d98540d799d81b03d9514cb15ec25aa">addFenetre</a>(<a class="code" href="../../d6/d6b/struct_fenetre.html">Histogramme</a> oldHistogram);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="../../d6/d6b/struct_fenetre.html">Histogramme</a> <a class="code" href="../../da/d09/audio_8h.html#a4cfd44e2192a2e459082e09d6de37cf3">deleteFenetre</a>(<a class="code" href="../../d6/d6b/struct_fenetre.html">Histogramme</a> oldHistogram, <a class="code" href="../../d6/d6b/struct_fenetre.html">Fenetre</a>* oldFenetre);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="../../d6/d6b/struct_fenetre.html">Histogramme</a> <a class="code" href="../../da/d09/audio_8h.html#ad31c4fe9f20885274ba8c5885a8a59c6">appendFenetre</a>(<a class="code" href="../../d6/d6b/struct_fenetre.html">Histogramme</a> oldHistogram, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> nameOfNewFenetre, <a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> pileOfNewFenetre);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d09/audio_8h.html#a439a63809ea9724bc1e819ca1b8148d5">displayFenetre</a>(<a class="code" href="../../d6/d6b/struct_fenetre.html">Histogramme</a> display); <span class="comment">//For debug reasons</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d09/audio_8h.html#acc70bf873b0eeaa4d58c3691c3b4fc12">displayDescripteurAudio</a>(<a class="code" href="../../d8/da7/structaudio_desc.html">DescripteurAudio</a> display);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d09/audio_8h.html#af7afe32a50bdf59c3f5aa0095a17f0e5">resetFileCursor</a>(FILE* p_file, <span class="keywordtype">int</span> fileType);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../da/d09/audio_8h.html#ac29a99c08bedb144f49ab930c3e5e71c">getAudioFileSize</a>(FILE* p_file, <span class="keywordtype">int</span> fileType);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../da/d09/audio_8h.html#aa6d2571062a5ad77c9ffe6c837ee6ce6">getSubdivisionValue</a>(<span class="keywordtype">double</span> val, <span class="keywordtype">int</span> nbSubdivisions);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="../../d8/da7/structaudio_desc.html">DescripteurAudio</a> <a class="code" href="../../da/d09/audio_8h.html#a9b2895a077848fdb0207edee6c7a1135">creerDescripteurAudio</a>(FILE* p_file, <span class="keywordtype">int</span> tailleFenetre, <span class="keywordtype">int</span> nbSubdivisions, <span class="keywordtype">int</span> fileType);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">float</span> <a class="code" href="../../da/d09/audio_8h.html#a6b0cf43794ef63db206c51824f811919">getSimilarityValue</a>(<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a>* pile1, <a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a>* pile2, <span class="keywordtype">int</span> tailleFenetre);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> <a class="code" href="../../da/d09/audio_8h.html#a075c590eaa5e1caa308d8c13a86d689e">comparerDescripteursAudio</a>(<a class="code" href="../../d8/da7/structaudio_desc.html">DescripteurAudio</a> jingle, <a class="code" href="../../d8/da7/structaudio_desc.html">DescripteurAudio</a> fichierAudio);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="../../da/d09/audio_8h.html#a592734a754a2fde659c7d66e19d18de9">fenetreToString</a>(<a class="code" href="../../d6/d6b/struct_fenetre.html">Fenetre</a> workingFenetre, <span class="keywordtype">int</span>* size);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="../../da/d09/audio_8h.html#ae40c4cfa3641fa1bdf0117f24840fab2">descripteurAudioToString</a>(<a class="code" href="../../d8/da7/structaudio_desc.html">DescripteurAudio</a> descToString); <span class="comment">//Attention, cela détruit l&#39;intérieur du descripteur, il est inutilisable après</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="../../d8/da7/structaudio_desc.html">DescripteurAudio</a> <a class="code" href="../../da/d09/audio_8h.html#a8710dc345f77442a62f7a00c6024f8e1">stringToDescripteurAudio</a>(<span class="keywordtype">char</span>* stringToParse);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aaudio_8h_html_a4cfd44e2192a2e459082e09d6de37cf3"><div class="ttname"><a href="../../da/d09/audio_8h.html#a4cfd44e2192a2e459082e09d6de37cf3">deleteFenetre</a></div><div class="ttdeci">Histogramme deleteFenetre(Histogramme oldHistogram, Fenetre *oldFenetre)</div><div class="ttdef"><b>Definition:</b> audio.c:58</div></div>
+<div class="ttc" id="aaudio_8h_html_a439a63809ea9724bc1e819ca1b8148d5"><div class="ttname"><a href="../../da/d09/audio_8h.html#a439a63809ea9724bc1e819ca1b8148d5">displayFenetre</a></div><div class="ttdeci">void displayFenetre(Histogramme display)</div><div class="ttdef"><b>Definition:</b> audio.c:142</div></div>
+<div class="ttc" id="astruct_fenetre_html_a54c77961f3acf24efa9fa832aedac099"><div class="ttname"><a href="../../d6/d6b/struct_fenetre.html#a54c77961f3acf24efa9fa832aedac099">Fenetre::subdivision</a></div><div class="ttdeci">PILE subdivision</div><div class="ttdef"><b>Definition:</b> audio.h:27</div></div>
+<div class="ttc" id="aaudio_8h_html_aa6d2571062a5ad77c9ffe6c837ee6ce6"><div class="ttname"><a href="../../da/d09/audio_8h.html#aa6d2571062a5ad77c9ffe6c837ee6ce6">getSubdivisionValue</a></div><div class="ttdeci">int getSubdivisionValue(double val, int nbSubdivisions)</div><div class="ttdoc">Get the Subdivision Value object.</div><div class="ttdef"><b>Definition:</b> audio.c:95</div></div>
+<div class="ttc" id="astructaudio_desc_html_ad11bae20136bb62176c103749961cc84"><div class="ttname"><a href="../../d8/da7/structaudio_desc.html#ad11bae20136bb62176c103749961cc84">audioDesc::data</a></div><div class="ttdeci">Histogramme data</div><div class="ttdef"><b>Definition:</b> audio.h:36</div></div>
+<div class="ttc" id="aaudio_8h_html_a9b2895a077848fdb0207edee6c7a1135"><div class="ttname"><a href="../../da/d09/audio_8h.html#a9b2895a077848fdb0207edee6c7a1135">creerDescripteurAudio</a></div><div class="ttdeci">DescripteurAudio creerDescripteurAudio(FILE *p_file, int tailleFenetre, int nbSubdivisions, int fileType)</div><div class="ttdef"><b>Definition:</b> audio.c:101</div></div>
+<div class="ttc" id="aaudio_8h_html_a075c590eaa5e1caa308d8c13a86d689e"><div class="ttname"><a href="../../da/d09/audio_8h.html#a075c590eaa5e1caa308d8c13a86d689e">comparerDescripteursAudio</a></div><div class="ttdeci">PILE comparerDescripteursAudio(DescripteurAudio jingle, DescripteurAudio fichierAudio)</div><div class="ttdef"><b>Definition:</b> audio.c:281</div></div>
+<div class="ttc" id="aaudio_8h_html_a4d98540d799d81b03d9514cb15ec25aa"><div class="ttname"><a href="../../da/d09/audio_8h.html#a4d98540d799d81b03d9514cb15ec25aa">addFenetre</a></div><div class="ttdeci">Histogramme addFenetre(Histogramme oldHistogram)</div><div class="ttdef"><b>Definition:</b> audio.c:25</div></div>
+<div class="ttc" id="astruct_fenetre_html"><div class="ttname"><a href="../../d6/d6b/struct_fenetre.html">Fenetre</a></div><div class="ttdef"><b>Definition:</b> audio.h:24</div></div>
+<div class="ttc" id="astructaudio_desc_html_af098efa88fbe8ccbfaff1633715a970e"><div class="ttname"><a href="../../d8/da7/structaudio_desc.html#af098efa88fbe8ccbfaff1633715a970e">audioDesc::tailleFenetre</a></div><div class="ttdeci">unsigned int tailleFenetre</div><div class="ttdef"><b>Definition:</b> audio.h:34</div></div>
+<div class="ttc" id="astruct_fenetre_html_a07db5738d854b7ed98e65746fa32abbb"><div class="ttname"><a href="../../d6/d6b/struct_fenetre.html#a07db5738d854b7ed98e65746fa32abbb">Fenetre::name</a></div><div class="ttdeci">unsigned long name</div><div class="ttdef"><b>Definition:</b> audio.h:25</div></div>
+<div class="ttc" id="astructaudio_desc_html"><div class="ttname"><a href="../../d8/da7/structaudio_desc.html">audioDesc</a></div><div class="ttdef"><b>Definition:</b> audio.h:32</div></div>
+<div class="ttc" id="astruct_c_e_l_l_u_l_e_html"><div class="ttname"><a href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">CELLULE</a></div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.h:15</div></div>
+<div class="ttc" id="aaudio_8h_html_a861dfd6af00a8e38ec3cf11780cda3b9"><div class="ttname"><a href="../../da/d09/audio_8h.html#a861dfd6af00a8e38ec3cf11780cda3b9">DescripteurAudio</a></div><div class="ttdeci">struct audioDesc DescripteurAudio</div></div>
+<div class="ttc" id="aaudio_8h_html_a592734a754a2fde659c7d66e19d18de9"><div class="ttname"><a href="../../da/d09/audio_8h.html#a592734a754a2fde659c7d66e19d18de9">fenetreToString</a></div><div class="ttdeci">char * fenetreToString(Fenetre workingFenetre, int *size)</div><div class="ttdef"><b>Definition:</b> audio.c:163</div></div>
+<div class="ttc" id="aaudio_8h_html_a4b5f791ddc0c17965b8b40162a61f7a8"><div class="ttname"><a href="../../da/d09/audio_8h.html#a4b5f791ddc0c17965b8b40162a61f7a8">Fenetre</a></div><div class="ttdeci">struct Fenetre Fenetre</div></div>
+<div class="ttc" id="aaudio_8h_html_ac29a99c08bedb144f49ab930c3e5e71c"><div class="ttname"><a href="../../da/d09/audio_8h.html#ac29a99c08bedb144f49ab930c3e5e71c">getAudioFileSize</a></div><div class="ttdeci">unsigned int getAudioFileSize(FILE *p_file, int fileType)</div><div class="ttdoc">Get the Audio File Size object.</div><div class="ttdef"><b>Definition:</b> audio.c:81</div></div>
+<div class="ttc" id="aaudio_8h_html_acc70bf873b0eeaa4d58c3691c3b4fc12"><div class="ttname"><a href="../../da/d09/audio_8h.html#acc70bf873b0eeaa4d58c3691c3b4fc12">displayDescripteurAudio</a></div><div class="ttdeci">void displayDescripteurAudio(DescripteurAudio display)</div><div class="ttdef"><b>Definition:</b> audio.c:152</div></div>
+<div class="ttc" id="aaudio_8h_html_ad31c4fe9f20885274ba8c5885a8a59c6"><div class="ttname"><a href="../../da/d09/audio_8h.html#ad31c4fe9f20885274ba8c5885a8a59c6">appendFenetre</a></div><div class="ttdeci">Histogramme appendFenetre(Histogramme oldHistogram, unsigned long nameOfNewFenetre, PILE pileOfNewFenetre)</div><div class="ttdef"><b>Definition:</b> audio.c:38</div></div>
+<div class="ttc" id="astructaudio_desc_html_aa6852b7fab3f669383075bba0a310aad"><div class="ttname"><a href="../../d8/da7/structaudio_desc.html#aa6852b7fab3f669383075bba0a310aad">audioDesc::nbFenetres</a></div><div class="ttdeci">unsigned long int nbFenetres</div><div class="ttdef"><b>Definition:</b> audio.h:35</div></div>
+<div class="ttc" id="aaudio_8h_html_a8710dc345f77442a62f7a00c6024f8e1"><div class="ttname"><a href="../../da/d09/audio_8h.html#a8710dc345f77442a62f7a00c6024f8e1">stringToDescripteurAudio</a></div><div class="ttdeci">DescripteurAudio stringToDescripteurAudio(char *stringToParse)</div><div class="ttdef"><b>Definition:</b> audio.c:213</div></div>
+<div class="ttc" id="astruct_fenetre_html_aa34892e3ff59c063e6dad53944ec16a5"><div class="ttname"><a href="../../d6/d6b/struct_fenetre.html#aa34892e3ff59c063e6dad53944ec16a5">Fenetre::nextFenetre</a></div><div class="ttdeci">struct Fenetre * nextFenetre</div><div class="ttdef"><b>Definition:</b> audio.h:26</div></div>
+<div class="ttc" id="aaudio_8h_html_aedddeaf44b798c2060d0f860d99e71aa"><div class="ttname"><a href="../../da/d09/audio_8h.html#aedddeaf44b798c2060d0f860d99e71aa">initHistogramme</a></div><div class="ttdeci">Histogramme initHistogramme()</div><div class="ttdef"><b>Definition:</b> audio.c:23</div></div>
+<div class="ttc" id="aaudio_8h_html_a8804b3471af9e419fb983e96c37030cb"><div class="ttname"><a href="../../da/d09/audio_8h.html#a8804b3471af9e419fb983e96c37030cb">Histogramme</a></div><div class="ttdeci">Fenetre * Histogramme</div><div class="ttdef"><b>Definition:</b> audio.h:30</div></div>
+<div class="ttc" id="aaudio_8h_html_a6b0cf43794ef63db206c51824f811919"><div class="ttname"><a href="../../da/d09/audio_8h.html#a6b0cf43794ef63db206c51824f811919">getSimilarityValue</a></div><div class="ttdeci">float getSimilarityValue(PILE *pile1, PILE *pile2, int tailleFenetre)</div><div class="ttdef"><b>Definition:</b> audio.c:256</div></div>
+<div class="ttc" id="astructaudio_desc_html_a786b7db6f1e42a565216cefffdc60092"><div class="ttname"><a href="../../d8/da7/structaudio_desc.html#a786b7db6f1e42a565216cefffdc60092">audioDesc::nbSubdivisions</a></div><div class="ttdeci">unsigned int nbSubdivisions</div><div class="ttdef"><b>Definition:</b> audio.h:33</div></div>
+<div class="ttc" id="aaudio_8h_html_af7afe32a50bdf59c3f5aa0095a17f0e5"><div class="ttname"><a href="../../da/d09/audio_8h.html#af7afe32a50bdf59c3f5aa0095a17f0e5">resetFileCursor</a></div><div class="ttdeci">void resetFileCursor(FILE *p_file, int fileType)</div><div class="ttdef"><b>Definition:</b> audio.c:73</div></div>
+<div class="ttc" id="aaudio_8h_html_ae40c4cfa3641fa1bdf0117f24840fab2"><div class="ttname"><a href="../../da/d09/audio_8h.html#ae40c4cfa3641fa1bdf0117f24840fab2">descripteurAudioToString</a></div><div class="ttdeci">char * descripteurAudioToString(DescripteurAudio descToString)</div><div class="ttdef"><b>Definition:</b> audio.c:188</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

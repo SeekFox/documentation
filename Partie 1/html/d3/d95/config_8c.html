@@ -1,0 +1,901 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SeekFox: Référence du fichier config.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SeekFox
+   </div>
+   <div id="projectbrief">Partie 1 - Moteur de recherche</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier config.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions gerants les parametres de configuration.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;crypt.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../db/d16/config_8h_source.html">../include/config.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/d0f/interact_8h_source.html">../include/interact.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../df/dc6/indexation_8h_source.html">../include/indexation.h</a>&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d89/structconfig__s.html">config_s</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure de Configuration.  <a href="../../d6/d89/structconfig__s.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a878c8d9a056ddee62ca2c86ac4ec1fce"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a878c8d9a056ddee62ca2c86ac4ec1fce">getPasswordAdmin</a> ()</td></tr>
+<tr class="memdesc:a878c8d9a056ddee62ca2c86ac4ec1fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Password Admin object.  <a href="../../d3/d95/config_8c.html#a878c8d9a056ddee62ca2c86ac4ec1fce">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a878c8d9a056ddee62ca2c86ac4ec1fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd37fb42a775c1fc1018af58f32c2427"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#acd37fb42a775c1fc1018af58f32c2427">getTailleMin</a> ()</td></tr>
+<tr class="memdesc:acd37fb42a775c1fc1018af58f32c2427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Taille Min object.  <a href="../../d3/d95/config_8c.html#acd37fb42a775c1fc1018af58f32c2427">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acd37fb42a775c1fc1018af58f32c2427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb974e8c45654385dc380eab0e4e654"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a9bb974e8c45654385dc380eab0e4e654">getVal</a> ()</td></tr>
+<tr class="memdesc:a9bb974e8c45654385dc380eab0e4e654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Val object.  <a href="../../d3/d95/config_8c.html#a9bb974e8c45654385dc380eab0e4e654">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9bb974e8c45654385dc380eab0e4e654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f2286fbc11db13f715e0541e13d805a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a0f2286fbc11db13f715e0541e13d805a">getSeuil</a> ()</td></tr>
+<tr class="memdesc:a0f2286fbc11db13f715e0541e13d805a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Seuil object.  <a href="../../d3/d95/config_8c.html#a0f2286fbc11db13f715e0541e13d805a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0f2286fbc11db13f715e0541e13d805a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0029109d41f0753de36d98dc6a3c9a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#ac0029109d41f0753de36d98dc6a3c9a1">getNbBits</a> ()</td></tr>
+<tr class="memdesc:ac0029109d41f0753de36d98dc6a3c9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Nb Bits object.  <a href="../../d3/d95/config_8c.html#ac0029109d41f0753de36d98dc6a3c9a1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac0029109d41f0753de36d98dc6a3c9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2f4f90a85c05a3bb13e3b972b35190"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a8b2f4f90a85c05a3bb13e3b972b35190">getAudioN</a> ()</td></tr>
+<tr class="memdesc:a8b2f4f90a85c05a3bb13e3b972b35190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Audio N object.  <a href="../../d3/d95/config_8c.html#a8b2f4f90a85c05a3bb13e3b972b35190">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8b2f4f90a85c05a3bb13e3b972b35190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110c9d4dd6aec90e3687a4f63ca811d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a110c9d4dd6aec90e3687a4f63ca811d3">getAudioM</a> ()</td></tr>
+<tr class="memdesc:a110c9d4dd6aec90e3687a4f63ca811d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Audio M object.  <a href="../../d3/d95/config_8c.html#a110c9d4dd6aec90e3687a4f63ca811d3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a110c9d4dd6aec90e3687a4f63ca811d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8561897c634673a7c4c87313382a0d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a2c8561897c634673a7c4c87313382a0d">getLogicielTexte</a> ()</td></tr>
+<tr class="memdesc:a2c8561897c634673a7c4c87313382a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Logiciel Texte object.  <a href="../../d3/d95/config_8c.html#a2c8561897c634673a7c4c87313382a0d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2c8561897c634673a7c4c87313382a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815e2d9100f6370be0250751fb904151"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a815e2d9100f6370be0250751fb904151">getLogicielOuvertureFichier</a> ()</td></tr>
+<tr class="memdesc:a815e2d9100f6370be0250751fb904151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Logiciel Ouverture Fichier object.  <a href="../../d3/d95/config_8c.html#a815e2d9100f6370be0250751fb904151">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a815e2d9100f6370be0250751fb904151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ef4398a4310e2063cbb4a55dc1e8bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a10ef4398a4310e2063cbb4a55dc1e8bc">setPasswordAdmin</a> (<a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *c, char *pwd)</td></tr>
+<tr class="memdesc:a10ef4398a4310e2063cbb4a55dc1e8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Password Admin object.  <a href="../../d3/d95/config_8c.html#a10ef4398a4310e2063cbb4a55dc1e8bc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a10ef4398a4310e2063cbb4a55dc1e8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948e08b367fc6b5d3555fbc76a567e38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a948e08b367fc6b5d3555fbc76a567e38">setTailleMin</a> (<a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *c, int tailleMin)</td></tr>
+<tr class="memdesc:a948e08b367fc6b5d3555fbc76a567e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Taille Min object.  <a href="../../d3/d95/config_8c.html#a948e08b367fc6b5d3555fbc76a567e38">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a948e08b367fc6b5d3555fbc76a567e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f8ba954f59315bbb0d1ee4f99bb3d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a20f8ba954f59315bbb0d1ee4f99bb3d4">setVal</a> (<a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *c, int val)</td></tr>
+<tr class="memdesc:a20f8ba954f59315bbb0d1ee4f99bb3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Val object.  <a href="../../d3/d95/config_8c.html#a20f8ba954f59315bbb0d1ee4f99bb3d4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a20f8ba954f59315bbb0d1ee4f99bb3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d768c21ccd2d9c4ccb61bcb03c40aac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a7d768c21ccd2d9c4ccb61bcb03c40aac">setSeuil</a> (<a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *c, int seuil)</td></tr>
+<tr class="memdesc:a7d768c21ccd2d9c4ccb61bcb03c40aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Seuil object.  <a href="../../d3/d95/config_8c.html#a7d768c21ccd2d9c4ccb61bcb03c40aac">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7d768c21ccd2d9c4ccb61bcb03c40aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8451280864d75ad5732268716f92093"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#ab8451280864d75ad5732268716f92093">setNbBits</a> (<a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *c, int nbBits)</td></tr>
+<tr class="memdesc:ab8451280864d75ad5732268716f92093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Nb Bits object.  <a href="../../d3/d95/config_8c.html#ab8451280864d75ad5732268716f92093">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab8451280864d75ad5732268716f92093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb3afeb47195374de92b5eeff7e502a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a0bb3afeb47195374de92b5eeff7e502a">setAudioN</a> (<a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *c, int n)</td></tr>
+<tr class="memdesc:a0bb3afeb47195374de92b5eeff7e502a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Audio N object.  <a href="../../d3/d95/config_8c.html#a0bb3afeb47195374de92b5eeff7e502a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0bb3afeb47195374de92b5eeff7e502a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64dd0f15e2b2d377c9e426b26c96a76f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a64dd0f15e2b2d377c9e426b26c96a76f">setAudioM</a> (<a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *c, int m)</td></tr>
+<tr class="memdesc:a64dd0f15e2b2d377c9e426b26c96a76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Audio M object.  <a href="../../d3/d95/config_8c.html#a64dd0f15e2b2d377c9e426b26c96a76f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a64dd0f15e2b2d377c9e426b26c96a76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8228b3796cce6f9d5bdbaf159ec2e47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#af8228b3796cce6f9d5bdbaf159ec2e47">setLogicielTexte</a> (<a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *c, char *str)</td></tr>
+<tr class="memdesc:af8228b3796cce6f9d5bdbaf159ec2e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Logiciel Texte object.  <a href="../../d3/d95/config_8c.html#af8228b3796cce6f9d5bdbaf159ec2e47">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af8228b3796cce6f9d5bdbaf159ec2e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a67636dda227b015009fa5894ddaf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a72a67636dda227b015009fa5894ddaf6">setLogicielOuvertureFichier</a> (<a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *c, char *str)</td></tr>
+<tr class="memdesc:a72a67636dda227b015009fa5894ddaf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Logiciel Ouverture Fichier object.  <a href="../../d3/d95/config_8c.html#a72a67636dda227b015009fa5894ddaf6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a72a67636dda227b015009fa5894ddaf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26193127f4ca0b161e01645d7c9b47c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#ab26193127f4ca0b161e01645d7c9b47c">loadConfig</a> ()</td></tr>
+<tr class="memdesc:ab26193127f4ca0b161e01645d7c9b47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere les infos du fichier config.  <a href="../../d3/d95/config_8c.html#ab26193127f4ca0b161e01645d7c9b47c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab26193127f4ca0b161e01645d7c9b47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486c7b37eb37847afaeeb6c73de398b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a486c7b37eb37847afaeeb6c73de398b9">displayConfig</a> ()</td></tr>
+<tr class="memdesc:a486c7b37eb37847afaeeb6c73de398b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche les parametres de configuration.  <a href="../../d3/d95/config_8c.html#a486c7b37eb37847afaeeb6c73de398b9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a486c7b37eb37847afaeeb6c73de398b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85428f19548b3f1f5cb295c2591342f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#ae85428f19548b3f1f5cb295c2591342f">changePassword</a> ()</td></tr>
+<tr class="memdesc:ae85428f19548b3f1f5cb295c2591342f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changer le mot de passe.  <a href="../../d3/d95/config_8c.html#ae85428f19548b3f1f5cb295c2591342f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae85428f19548b3f1f5cb295c2591342f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027bef9e6368b307943f477a99e5fbd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a027bef9e6368b307943f477a99e5fbd9">changeTailleMin</a> ()</td></tr>
+<tr class="memdesc:a027bef9e6368b307943f477a99e5fbd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changer la Taille Min.  <a href="../../d3/d95/config_8c.html#a027bef9e6368b307943f477a99e5fbd9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a027bef9e6368b307943f477a99e5fbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3ec7fe0a3f4b16d41d4af58cf9b55c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a6a3ec7fe0a3f4b16d41d4af58cf9b55c">changeVal</a> ()</td></tr>
+<tr class="memdesc:a6a3ec7fe0a3f4b16d41d4af58cf9b55c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changer la valeur limite de mots.  <a href="../../d3/d95/config_8c.html#a6a3ec7fe0a3f4b16d41d4af58cf9b55c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6a3ec7fe0a3f4b16d41d4af58cf9b55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacac0ab7c33c9f604542af072c5fd200"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#aacac0ab7c33c9f604542af072c5fd200">changeSeuil</a> ()</td></tr>
+<tr class="memdesc:aacac0ab7c33c9f604542af072c5fd200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changer le seuil limite de taille de mot.  <a href="../../d3/d95/config_8c.html#aacac0ab7c33c9f604542af072c5fd200">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aacac0ab7c33c9f604542af072c5fd200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc62652507537c89903c3d71a92c50d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#adc62652507537c89903c3d71a92c50d8">changeNbBits</a> ()</td></tr>
+<tr class="memdesc:adc62652507537c89903c3d71a92c50d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change le parametre NbBits.  <a href="../../d3/d95/config_8c.html#adc62652507537c89903c3d71a92c50d8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:adc62652507537c89903c3d71a92c50d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a951209bf0c76c9489183d50d69211cfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a951209bf0c76c9489183d50d69211cfe">changeAudioN</a> ()</td></tr>
+<tr class="memdesc:a951209bf0c76c9489183d50d69211cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changer le parametre Audio N.  <a href="../../d3/d95/config_8c.html#a951209bf0c76c9489183d50d69211cfe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a951209bf0c76c9489183d50d69211cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f816ace6254f303b0b31eceb0d1425"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#a16f816ace6254f303b0b31eceb0d1425">changeAudioM</a> ()</td></tr>
+<tr class="memdesc:a16f816ace6254f303b0b31eceb0d1425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changer le parametre Audio M.  <a href="../../d3/d95/config_8c.html#a16f816ace6254f303b0b31eceb0d1425">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a16f816ace6254f303b0b31eceb0d1425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5025bc1960761271effb731c225526c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d95/config_8c.html#ae5025bc1960761271effb731c225526c">majConfigFile</a> ()</td></tr>
+<tr class="memdesc:ae5025bc1960761271effb731c225526c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met � jour le fichier user.config.  <a href="../../d3/d95/config_8c.html#ae5025bc1960761271effb731c225526c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae5025bc1960761271effb731c225526c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions gerants les parametres de configuration. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Clement Truillet (<a href="#" onclick="location.href='mai'+'lto:'+'cle'+'me'+'nt.'+'tr'+'uil'+'le'+'t@u'+'ni'+'v-t'+'ls'+'e3.'+'fr'; return false;">cleme<span style="display: none;">.nosp@m.</span>nt.t<span style="display: none;">.nosp@m.</span>ruill<span style="display: none;">.nosp@m.</span>et@u<span style="display: none;">.nosp@m.</span>niv-t<span style="display: none;">.nosp@m.</span>lse3<span style="display: none;">.nosp@m.</span>.fr</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>23/12/2019</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2019 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a16f816ace6254f303b0b31eceb0d1425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f816ace6254f303b0b31eceb0d1425">&#9670;&nbsp;</a></span>changeAudioM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void changeAudioM </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changer le parametre Audio M. </p>
+
+</div>
+</div>
+<a id="a951209bf0c76c9489183d50d69211cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a951209bf0c76c9489183d50d69211cfe">&#9670;&nbsp;</a></span>changeAudioN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void changeAudioN </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changer le parametre Audio N. </p>
+
+</div>
+</div>
+<a id="adc62652507537c89903c3d71a92c50d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc62652507537c89903c3d71a92c50d8">&#9670;&nbsp;</a></span>changeNbBits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void changeNbBits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change le parametre NbBits. </p>
+
+</div>
+</div>
+<a id="ae85428f19548b3f1f5cb295c2591342f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae85428f19548b3f1f5cb295c2591342f">&#9670;&nbsp;</a></span>changePassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void changePassword </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changer le mot de passe. </p>
+
+</div>
+</div>
+<a id="aacac0ab7c33c9f604542af072c5fd200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacac0ab7c33c9f604542af072c5fd200">&#9670;&nbsp;</a></span>changeSeuil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void changeSeuil </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changer le seuil limite de taille de mot. </p>
+
+</div>
+</div>
+<a id="a027bef9e6368b307943f477a99e5fbd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a027bef9e6368b307943f477a99e5fbd9">&#9670;&nbsp;</a></span>changeTailleMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void changeTailleMin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changer la Taille Min. </p>
+
+</div>
+</div>
+<a id="a6a3ec7fe0a3f4b16d41d4af58cf9b55c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3ec7fe0a3f4b16d41d4af58cf9b55c">&#9670;&nbsp;</a></span>changeVal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void changeVal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changer la valeur limite de mots. </p>
+
+</div>
+</div>
+<a id="a486c7b37eb37847afaeeb6c73de398b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486c7b37eb37847afaeeb6c73de398b9">&#9670;&nbsp;</a></span>displayConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void displayConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche les parametres de configuration. </p>
+
+</div>
+</div>
+<a id="a110c9d4dd6aec90e3687a4f63ca811d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a110c9d4dd6aec90e3687a4f63ca811d3">&#9670;&nbsp;</a></span>getAudioM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getAudioM </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Audio M object. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a8b2f4f90a85c05a3bb13e3b972b35190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b2f4f90a85c05a3bb13e3b972b35190">&#9670;&nbsp;</a></span>getAudioN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getAudioN </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Audio N object. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a815e2d9100f6370be0250751fb904151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815e2d9100f6370be0250751fb904151">&#9670;&nbsp;</a></span>getLogicielOuvertureFichier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* getLogicielOuvertureFichier </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Logiciel Ouverture Fichier object. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>char* </dd></dl>
+
+</div>
+</div>
+<a id="a2c8561897c634673a7c4c87313382a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c8561897c634673a7c4c87313382a0d">&#9670;&nbsp;</a></span>getLogicielTexte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* getLogicielTexte </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Logiciel Texte object. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>char* </dd></dl>
+
+</div>
+</div>
+<a id="ac0029109d41f0753de36d98dc6a3c9a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0029109d41f0753de36d98dc6a3c9a1">&#9670;&nbsp;</a></span>getNbBits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getNbBits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Nb Bits object. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a878c8d9a056ddee62ca2c86ac4ec1fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a878c8d9a056ddee62ca2c86ac4ec1fce">&#9670;&nbsp;</a></span>getPasswordAdmin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* getPasswordAdmin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Password Admin object. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>char* </dd></dl>
+
+</div>
+</div>
+<a id="a0f2286fbc11db13f715e0541e13d805a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f2286fbc11db13f715e0541e13d805a">&#9670;&nbsp;</a></span>getSeuil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getSeuil </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Seuil object. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="acd37fb42a775c1fc1018af58f32c2427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd37fb42a775c1fc1018af58f32c2427">&#9670;&nbsp;</a></span>getTailleMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getTailleMin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Taille Min object. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a9bb974e8c45654385dc380eab0e4e654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb974e8c45654385dc380eab0e4e654">&#9670;&nbsp;</a></span>getVal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getVal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Val object. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="ab26193127f4ca0b161e01645d7c9b47c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26193127f4ca0b161e01645d7c9b47c">&#9670;&nbsp;</a></span>loadConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> loadConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recupere les infos du fichier config. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Config </dd></dl>
+
+</div>
+</div>
+<a id="ae5025bc1960761271effb731c225526c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5025bc1960761271effb731c225526c">&#9670;&nbsp;</a></span>majConfigFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void majConfigFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met � jour le fichier user.config. </p>
+
+</div>
+</div>
+<a id="a64dd0f15e2b2d377c9e426b26c96a76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64dd0f15e2b2d377c9e426b26c96a76f">&#9670;&nbsp;</a></span>setAudioM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAudioM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Audio M object. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">m</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0bb3afeb47195374de92b5eeff7e502a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb3afeb47195374de92b5eeff7e502a">&#9670;&nbsp;</a></span>setAudioN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setAudioN </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Audio N object. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">n</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a72a67636dda227b015009fa5894ddaf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72a67636dda227b015009fa5894ddaf6">&#9670;&nbsp;</a></span>setLogicielOuvertureFichier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setLogicielOuvertureFichier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Logiciel Ouverture Fichier object. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">str</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8228b3796cce6f9d5bdbaf159ec2e47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8228b3796cce6f9d5bdbaf159ec2e47">&#9670;&nbsp;</a></span>setLogicielTexte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setLogicielTexte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Logiciel Texte object. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">str</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab8451280864d75ad5732268716f92093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8451280864d75ad5732268716f92093">&#9670;&nbsp;</a></span>setNbBits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setNbBits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbBits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Nb Bits object. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">nbBits</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a10ef4398a4310e2063cbb4a55dc1e8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ef4398a4310e2063cbb4a55dc1e8bc">&#9670;&nbsp;</a></span>setPasswordAdmin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setPasswordAdmin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pwd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Password Admin object. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">pwd</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d768c21ccd2d9c4ccb61bcb03c40aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d768c21ccd2d9c4ccb61bcb03c40aac">&#9670;&nbsp;</a></span>setSeuil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setSeuil </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>seuil</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Seuil object. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">seuil</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a948e08b367fc6b5d3555fbc76a567e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a948e08b367fc6b5d3555fbc76a567e38">&#9670;&nbsp;</a></span>setTailleMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTailleMin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tailleMin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Taille Min object. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">tailleMin</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20f8ba954f59315bbb0d1ee4f99bb3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f8ba954f59315bbb0d1ee4f99bb3d4">&#9670;&nbsp;</a></span>setVal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setVal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d16/config_8h.html#a3c0efa99d503de6b6c28dc7e08745020">Config</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Val object. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td></td></tr>
+    <tr><td class="paramname">val</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

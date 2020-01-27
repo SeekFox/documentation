@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SeekFox:  Fichier source de header_image.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SeekFox
+   </div>
+   <div id="projectbrief">Partie 1 - Moteur de recherche</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">header_image.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/d61/header__image_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HEADER_IMAGE</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define HEADER_IMAGE</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ctype.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d2/d61/header__image_8h.html#a24ac9de49b1f41809847f53b6747dc3f">   10</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> * <a class="code" href="../../d2/d61/header__image_8h.html#a24ac9de49b1f41809847f53b6747dc3f">bits</a>; <span class="comment">// type qui sert à la quantification</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../dd/d17/structdescriptor.html">   12</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../dd/d17/structdescriptor.html">descriptor</a>{ <span class="comment">//structure d&#39;un descripteur :</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../dd/d17/structdescriptor.html#a434632807ab2c2bd6ad5597f520fd2cf">   13</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="../../dd/d17/structdescriptor.html#a434632807ab2c2bd6ad5597f520fd2cf">identifiant</a>[20]; <span class="comment">//une chaine representant un identifiant et un pointeur qui va prendre l&#39;histogramme</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../dd/d17/structdescriptor.html#a5d742998d4cd84abf026c12abb7c6ca7">   14</a></span>&#160;    <span class="keywordtype">int</span> *<a class="code" href="../../dd/d17/structdescriptor.html#a5d742998d4cd84abf026c12abb7c6ca7">Histogramme</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}<a class="code" href="../../d2/d61/header__image_8h.html#ae6d3d1124b0b15cd55547c4572edf62e">descripteur</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d4/d8a/structstructure.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d4/d8a/structstructure.html">structure</a>{ <span class="comment">// structure qui représente les résultats de la recherche elle comprend </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d4/d8a/structstructure.html#a434632807ab2c2bd6ad5597f520fd2cf">   18</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="../../d4/d8a/structstructure.html#a434632807ab2c2bd6ad5597f520fd2cf">identifiant</a>[20]; <span class="comment">// l&#39;identifiant du fichier</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d4/d8a/structstructure.html#ae47283009a8c7e8ca3246ce9e0a5e9ff">   19</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d4/d8a/structstructure.html#ae47283009a8c7e8ca3246ce9e0a5e9ff">Valeur</a>;   <span class="comment">// la valeur de compatibilité avec le fichier à comparer</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}<a class="code" href="../../d2/d61/header__image_8h.html#a539775b0515b8c90aaf44be4a0c148e4">Resultat</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/d61/header__image_8h.html#aea5c6d9891d361519faa978af86e5227">quantifierRGB</a>(<span class="keywordtype">int</span> composante_rouge,<span class="keywordtype">int</span> composante_vert,<span class="keywordtype">int</span> composante_bleue,<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/d61/header__image_8h.html#acac7aa52d3d16a871a71fe25699b58cc">quantifierNB</a>(<span class="keywordtype">int</span> ComposanteNoire,<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#ae8cac473e1b307d7bd87a3f68d74c14d">remplirMatrice</a>(FILE **f,<span class="keywordtype">int</span> lignes,<span class="keywordtype">int</span> colonnes,<span class="keywordtype">int</span> M[lignes][colonnes]);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#a8c9f5c3232842c2440d53436cf4764c7">realiserHistogrammeRGB</a>(<span class="keywordtype">int</span> lignes,<span class="keywordtype">int</span> colonnes,<span class="keywordtype">int</span> Image[lignes][colonnes],<span class="keywordtype">int</span> Rouge[lignes][colonnes],<span class="keywordtype">int</span> Verte[lignes][colonnes],<span class="keywordtype">int</span> Bleue[lignes][colonnes],<span class="keywordtype">int</span> n,<span class="keywordtype">int</span> <a class="code" href="../../d6/d6b/struct_fenetre.html">Histogramme</a>[],<span class="keywordtype">int</span> taille_max);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#a61aeaf6d46144faf95ad086219a3545b">realiserHistogrammeNB</a>(<span class="keywordtype">int</span> lignes,<span class="keywordtype">int</span> colonnes,<span class="keywordtype">int</span> Image[lignes][colonnes],<span class="keywordtype">int</span> noire[lignes][colonnes],<span class="keywordtype">int</span> n,<span class="keywordtype">int</span> <a class="code" href="../../d6/d6b/struct_fenetre.html">Histogramme</a>[],<span class="keywordtype">int</span> taille_max);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#adb6f1be8913517a088382029d19391a9">mise_a_jour_base</a>(<span class="keywordtype">int</span> n,<span class="keywordtype">int</span> i,<span class="keywordtype">int</span> taille_max,<span class="keywordtype">char</span> titre_fichier[],<a class="code" href="../../dd/d17/structdescriptor.html">descripteur</a> d);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/d61/header__image_8h.html#a18c4e420d46fb1fe30842e3aaa7d7929">base_est_vide</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#a0632e7e4bc7dd3ecce3cd25aa4ceee16">toString</a>(<span class="keywordtype">int</span> entier,<span class="keywordtype">char</span> chaine[]);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#a8c471cac238a6633d38f447222af5f0d">toInt</a>(<span class="keywordtype">char</span> chaine[],<span class="keywordtype">int</span> *entier);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/d61/header__image_8h.html#a39d418bd92b04a968faf568415ea4246">equals</a>(<span class="keywordtype">char</span> string1[],<span class="keywordtype">char</span> string2[],<span class="keywordtype">int</span> taille);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/d61/header__image_8h.html#a31afa064a1a87cb4c5fb96b259810226">fichier_deja_indexe</a>(<span class="keywordtype">char</span> titre_fichier[]);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#aae8e914fa093b9b40c3b6009d9b51c15">generer_identifiant</a>(<span class="keywordtype">int</span> n,<span class="keywordtype">char</span> titre_fichier[],<a class="code" href="../../dd/d17/structdescriptor.html">descripteur</a> *d,<span class="keywordtype">int</span> taille_max);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#a658084efe569242ca6b65e2aa534f384">generer_descripteur</a>(<a class="code" href="../../dd/d17/structdescriptor.html">descripteur</a> *d,<span class="keywordtype">char</span> CHEMIN2[],<span class="keywordtype">char</span> titre_fichier[],<span class="keywordtype">int</span> *taille_max,<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#a2e71bdde3fcc3be109265df4b8dc4bd7">afficher_descripteur</a>(<a class="code" href="../../dd/d17/structdescriptor.html">descripteur</a> d,<span class="keywordtype">int</span> taille_max);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#a9e6b47bfe67b05c51bd16185e537734b">lancer_indexation</a>(<span class="keywordtype">int</span> indice_indexation);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#a5a97ba365aa8251f0d69f3abf9f7da11">tri_decroissant</a>( <a class="code" href="../../d4/d8a/structstructure.html">Resultat</a> tab[], <span class="keywordtype">int</span> tab_size);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#ad57123cb0fda7c54e4e5ed0116c4b028">ouvrir_image</a>(<span class="keywordtype">char</span> identifiant[]);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#abf2bb99cfef52079781ffbdd7ba54ec8">afficher_les_resultats</a>(<a class="code" href="../../d4/d8a/structstructure.html">Resultat</a> r[]);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#ad648047b894f3a3f951ab148cdc9c272">ajouter_au_resultats</a>(<a class="code" href="../../d4/d8a/structstructure.html">Resultat</a> r[],<span class="keywordtype">int</span> resultat,<span class="keywordtype">int</span> *j,<span class="keywordtype">char</span> identifiant[]);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#af0c1857f10348ad19581e224617b6293">initialiser_resultat</a>(<a class="code" href="../../d4/d8a/structstructure.html">Resultat</a> r[]);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#a31a82f6a21e28faea41bef26f08bce86">rechercher_image</a>(<span class="keywordtype">char</span> chemin[],<span class="keywordtype">char</span> titre_fichier[],<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#aefade4fdb8435823fc4fbf16b853fa3a">descripteur_image_to_string</a>(<a class="code" href="../../dd/d17/structdescriptor.html">descripteur</a> d,<span class="keywordtype">char</span> <span class="keywordtype">string</span>[],<span class="keywordtype">int</span> taille_max);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d2/d61/header__image_8h.html#a24cd9ac807c354b9311839068e209167">string_to_descripteur_image</a>(<span class="keywordtype">char</span> <span class="keywordtype">string</span>[],<a class="code" href="../../dd/d17/structdescriptor.html">descripteur</a> *d);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aheader__image_8h_html_abf2bb99cfef52079781ffbdd7ba54ec8"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#abf2bb99cfef52079781ffbdd7ba54ec8">afficher_les_resultats</a></div><div class="ttdeci">void afficher_les_resultats(Resultat r[])</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:585</div></div>
+<div class="ttc" id="astructstructure_html_a434632807ab2c2bd6ad5597f520fd2cf"><div class="ttname"><a href="../../d4/d8a/structstructure.html#a434632807ab2c2bd6ad5597f520fd2cf">structure::identifiant</a></div><div class="ttdeci">char identifiant[20]</div><div class="ttdef"><b>Definition:</b> header_image.h:18</div></div>
+<div class="ttc" id="astructdescriptor_html_a434632807ab2c2bd6ad5597f520fd2cf"><div class="ttname"><a href="../../dd/d17/structdescriptor.html#a434632807ab2c2bd6ad5597f520fd2cf">descriptor::identifiant</a></div><div class="ttdeci">char identifiant[20]</div><div class="ttdef"><b>Definition:</b> header_image.h:13</div></div>
+<div class="ttc" id="aheader__image_8h_html_a8c9f5c3232842c2440d53436cf4764c7"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a8c9f5c3232842c2440d53436cf4764c7">realiserHistogrammeRGB</a></div><div class="ttdeci">void realiserHistogrammeRGB(int lignes, int colonnes, int Image[lignes][colonnes], int Rouge[lignes][colonnes], int Verte[lignes][colonnes], int Bleue[lignes][colonnes], int n, int Histogramme[], int taille_max)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:101</div></div>
+<div class="ttc" id="aheader__image_8h_html_acac7aa52d3d16a871a71fe25699b58cc"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#acac7aa52d3d16a871a71fe25699b58cc">quantifierNB</a></div><div class="ttdeci">int quantifierNB(int ComposanteNoire, int n)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:63</div></div>
+<div class="ttc" id="aheader__image_8h_html_a0632e7e4bc7dd3ecce3cd25aa4ceee16"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a0632e7e4bc7dd3ecce3cd25aa4ceee16">toString</a></div><div class="ttdeci">void toString(int entier, char chaine[])</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:204</div></div>
+<div class="ttc" id="aheader__image_8h_html_a9e6b47bfe67b05c51bd16185e537734b"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a9e6b47bfe67b05c51bd16185e537734b">lancer_indexation</a></div><div class="ttdeci">void lancer_indexation(int indice_indexation)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:400</div></div>
+<div class="ttc" id="aheader__image_8h_html_a61aeaf6d46144faf95ad086219a3545b"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a61aeaf6d46144faf95ad086219a3545b">realiserHistogrammeNB</a></div><div class="ttdeci">void realiserHistogrammeNB(int lignes, int colonnes, int Image[lignes][colonnes], int noire[lignes][colonnes], int n, int Histogramme[], int taille_max)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:129</div></div>
+<div class="ttc" id="aheader__image_8h_html_aea5c6d9891d361519faa978af86e5227"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#aea5c6d9891d361519faa978af86e5227">quantifierRGB</a></div><div class="ttdeci">int quantifierRGB(int composante_rouge, int composante_vert, int composante_bleue, int n)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:18</div></div>
+<div class="ttc" id="aheader__image_8h_html_a8c471cac238a6633d38f447222af5f0d"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a8c471cac238a6633d38f447222af5f0d">toInt</a></div><div class="ttdeci">void toInt(char chaine[], int *entier)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:210</div></div>
+<div class="ttc" id="aheader__image_8h_html_a24cd9ac807c354b9311839068e209167"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a24cd9ac807c354b9311839068e209167">string_to_descripteur_image</a></div><div class="ttdeci">void string_to_descripteur_image(char string[], descripteur *d)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:743</div></div>
+<div class="ttc" id="aheader__image_8h_html_a5a97ba365aa8251f0d69f3abf9f7da11"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a5a97ba365aa8251f0d69f3abf9f7da11">tri_decroissant</a></div><div class="ttdeci">void tri_decroissant(Resultat tab[], int tab_size)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:491</div></div>
+<div class="ttc" id="aheader__image_8h_html_af0c1857f10348ad19581e224617b6293"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#af0c1857f10348ad19581e224617b6293">initialiser_resultat</a></div><div class="ttdeci">void initialiser_resultat(Resultat r[])</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:631</div></div>
+<div class="ttc" id="astruct_fenetre_html"><div class="ttname"><a href="../../d6/d6b/struct_fenetre.html">Fenetre</a></div><div class="ttdef"><b>Definition:</b> audio.h:24</div></div>
+<div class="ttc" id="aheader__image_8h_html_ae6d3d1124b0b15cd55547c4572edf62e"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#ae6d3d1124b0b15cd55547c4572edf62e">descripteur</a></div><div class="ttdeci">struct descriptor descripteur</div></div>
+<div class="ttc" id="aheader__image_8h_html_ae8cac473e1b307d7bd87a3f68d74c14d"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#ae8cac473e1b307d7bd87a3f68d74c14d">remplirMatrice</a></div><div class="ttdeci">void remplirMatrice(FILE **f, int lignes, int colonnes, int M[lignes][colonnes])</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:89</div></div>
+<div class="ttc" id="astructdescriptor_html"><div class="ttname"><a href="../../dd/d17/structdescriptor.html">descriptor</a></div><div class="ttdef"><b>Definition:</b> header_image.h:12</div></div>
+<div class="ttc" id="astructdescriptor_html_a5d742998d4cd84abf026c12abb7c6ca7"><div class="ttname"><a href="../../dd/d17/structdescriptor.html#a5d742998d4cd84abf026c12abb7c6ca7">descriptor::Histogramme</a></div><div class="ttdeci">int * Histogramme</div><div class="ttdef"><b>Definition:</b> header_image.h:14</div></div>
+<div class="ttc" id="aheader__image_8h_html_a18c4e420d46fb1fe30842e3aaa7d7929"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a18c4e420d46fb1fe30842e3aaa7d7929">base_est_vide</a></div><div class="ttdeci">int base_est_vide()</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:181</div></div>
+<div class="ttc" id="aheader__image_8h_html_aae8e914fa093b9b40c3b6009d9b51c15"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#aae8e914fa093b9b40c3b6009d9b51c15">generer_identifiant</a></div><div class="ttdeci">void generer_identifiant(int n, char titre_fichier[], descripteur *d, int taille_max)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:252</div></div>
+<div class="ttc" id="aheader__image_8h_html_a39d418bd92b04a968faf568415ea4246"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a39d418bd92b04a968faf568415ea4246">equals</a></div><div class="ttdeci">int equals(char string1[], char string2[], int taille)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:216</div></div>
+<div class="ttc" id="astructstructure_html"><div class="ttname"><a href="../../d4/d8a/structstructure.html">structure</a></div><div class="ttdef"><b>Definition:</b> header_image.h:17</div></div>
+<div class="ttc" id="aheader__image_8h_html_ad57123cb0fda7c54e4e5ed0116c4b028"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#ad57123cb0fda7c54e4e5ed0116c4b028">ouvrir_image</a></div><div class="ttdeci">void ouvrir_image(char identifiant[])</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:519</div></div>
+<div class="ttc" id="astructstructure_html_ae47283009a8c7e8ca3246ce9e0a5e9ff"><div class="ttname"><a href="../../d4/d8a/structstructure.html#ae47283009a8c7e8ca3246ce9e0a5e9ff">structure::Valeur</a></div><div class="ttdeci">float Valeur</div><div class="ttdef"><b>Definition:</b> header_image.h:19</div></div>
+<div class="ttc" id="aheader__image_8h_html_a24ac9de49b1f41809847f53b6747dc3f"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a24ac9de49b1f41809847f53b6747dc3f">bits</a></div><div class="ttdeci">int * bits</div><div class="ttdef"><b>Definition:</b> header_image.h:10</div></div>
+<div class="ttc" id="aheader__image_8h_html_a2e71bdde3fcc3be109265df4b8dc4bd7"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a2e71bdde3fcc3be109265df4b8dc4bd7">afficher_descripteur</a></div><div class="ttdeci">void afficher_descripteur(descripteur d, int taille_max)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:386</div></div>
+<div class="ttc" id="aheader__image_8h_html_aefade4fdb8435823fc4fbf16b853fa3a"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#aefade4fdb8435823fc4fbf16b853fa3a">descripteur_image_to_string</a></div><div class="ttdeci">void descripteur_image_to_string(descripteur d, char string[], int taille_max)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:728</div></div>
+<div class="ttc" id="aheader__image_8h_html_adb6f1be8913517a088382029d19391a9"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#adb6f1be8913517a088382029d19391a9">mise_a_jour_base</a></div><div class="ttdeci">void mise_a_jour_base(int n, int i, int taille_max, char titre_fichier[], descripteur d)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:155</div></div>
+<div class="ttc" id="aheader__image_8h_html_a31afa064a1a87cb4c5fb96b259810226"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a31afa064a1a87cb4c5fb96b259810226">fichier_deja_indexe</a></div><div class="ttdeci">int fichier_deja_indexe(char titre_fichier[])</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:229</div></div>
+<div class="ttc" id="aheader__image_8h_html_ad648047b894f3a3f951ab148cdc9c272"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#ad648047b894f3a3f951ab148cdc9c272">ajouter_au_resultats</a></div><div class="ttdeci">void ajouter_au_resultats(Resultat r[], int resultat, int *j, char identifiant[])</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:616</div></div>
+<div class="ttc" id="aheader__image_8h_html_a539775b0515b8c90aaf44be4a0c148e4"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a539775b0515b8c90aaf44be4a0c148e4">Resultat</a></div><div class="ttdeci">struct structure Resultat</div></div>
+<div class="ttc" id="aheader__image_8h_html_a31a82f6a21e28faea41bef26f08bce86"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a31a82f6a21e28faea41bef26f08bce86">rechercher_image</a></div><div class="ttdeci">void rechercher_image(char chemin[], char titre_fichier[], int n)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:640</div></div>
+<div class="ttc" id="aheader__image_8h_html_a658084efe569242ca6b65e2aa534f384"><div class="ttname"><a href="../../d2/d61/header__image_8h.html#a658084efe569242ca6b65e2aa534f384">generer_descripteur</a></div><div class="ttdeci">void generer_descripteur(descripteur *d, char CHEMIN2[], char titre_fichier[], int *taille_max, int n)</div><div class="ttdef"><b>Definition:</b> fcts_test_image.c:299</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

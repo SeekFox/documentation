@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SeekFox:  Fichier source de recherche.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SeekFox
+   </div>
+   <div id="projectbrief">Partie 1 - Moteur de recherche</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">recherche.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dd/d36/recherche_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RECHERCHE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RECHERCHE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html">pile_dynamiqueAudio.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/* Principe : pour un fichier donné en recherche, on parcours tous les descripteurs du même type et on met les adresses de ceux </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">qui ont un taux de similitude suffisant dans une pile/file où il sont triés par similarité décroissante */</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/* Cellule de la pile contenant l&#39;adresse d&#39;un fichier et son taux de similitude */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../df/d9d/structfichier.html">    8</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../df/d9d/structfichier.html">fichier</a> {            </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../df/d9d/structfichier.html#aa58e296b2b66e04d38d39cd0099d03cb">    9</a></span>&#160;    <span class="keywordtype">char</span> * <a class="code" href="../../df/d9d/structfichier.html#aa58e296b2b66e04d38d39cd0099d03cb">adresse</a>;                 <span class="comment">// Adresse</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../df/d9d/structfichier.html#a0126d78967a704ca38cfdccad789a110">   10</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../df/d9d/structfichier.html#a0126d78967a704ca38cfdccad789a110">similarite</a>;               <span class="comment">// Taux de similarité</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../df/d9d/structfichier.html#ac6527eab0882196eb8c1c00887cd1e70">   11</a></span>&#160;    <span class="keywordtype">int</span> * <a class="code" href="../../df/d9d/structfichier.html#ac6527eab0882196eb8c1c00887cd1e70">tps</a>;                      <span class="comment">// Utilisé par le son uniquement, position en secondes des jingles identiques</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../df/d9d/structfichier.html#a409d4a371275e136aa9a4c2e1877f82a">   12</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../df/d9d/structfichier.html">fichier</a> * <a class="code" href="../../df/d9d/structfichier.html#a409d4a371275e136aa9a4c2e1877f82a">precedent</a>;     <span class="comment">// Fichier précédent (plus similaire)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../df/d9d/structfichier.html#a971a20c4631ad0522f73e67874f0b295">   13</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../df/d9d/structfichier.html">fichier</a> * <a class="code" href="../../df/d9d/structfichier.html#a971a20c4631ad0522f73e67874f0b295">suivant</a>;       <span class="comment">// Fichier suivant (moins similaire)</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;} <a class="code" href="../../dd/d36/recherche_8h.html#a283f26c5507f42bfcf382431d9ccacb8">FICHIER</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/* Pile/file doublement chaînée qui contient les fichiers correspondants à la recherche, triés par ordre de similarité décroissante */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../dd/dc7/structrecherche.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../dd/dc7/structrecherche.html">recherche</a> {          </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../dd/dc7/structrecherche.html#ae7ab51a89a2f307ce1239bfb5de9bcd9">   18</a></span>&#160;    <a class="code" href="../../df/d9d/structfichier.html">FICHIER</a> * <a class="code" href="../../dd/dc7/structrecherche.html#ae7ab51a89a2f307ce1239bfb5de9bcd9">premier</a>;              <span class="comment">// Fichier correspondant le mieux à la recherche</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../dd/dc7/structrecherche.html#ab7ff9c2fe4837efc6eea1e38de15143a">   19</a></span>&#160;    <a class="code" href="../../df/d9d/structfichier.html">FICHIER</a> * <a class="code" href="../../dd/dc7/structrecherche.html#ab7ff9c2fe4837efc6eea1e38de15143a">dernier</a>;              <span class="comment">// Dernier fichier pouvant être affiché</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../dd/dc7/structrecherche.html#a4ac185cf59f2ba43f95f9af810735f0f">   20</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../dd/dc7/structrecherche.html#a4ac185cf59f2ba43f95f9af810735f0f">nbFichiers</a>;                 <span class="comment">// Nombre de fichiers dans la pile</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <a class="code" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/* FONCTIONS DE MANIPULATION DES STRUCTURES */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<a class="code" href="../../df/d9d/structfichier.html">FICHIER</a> * <a class="code" href="../../dd/d36/recherche_8h.html#ac6ee443959f1da0b703fbdbaa9cca476">initCelluleFichier</a> ();                                <span class="comment">// Crée une cellule fichier vide</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="../../df/d9d/structfichier.html">FICHIER</a> * <a class="code" href="../../dd/d36/recherche_8h.html#ab90525ba232c59d991ca1485b5bd82c6">creerCelluleFichierSon</a> (<span class="keywordtype">char</span> *,<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="code" href="../../df/d9d/structfichier.html">FICHIER</a> * <a class="code" href="../../dd/d36/recherche_8h.html#a579d9422daf4ee57d84136c947de939e">creerCelluleFichier</a> (<span class="keywordtype">char</span> *,<span class="keywordtype">float</span>);                  <span class="comment">// Crée une cellule fichier contenant l&#39;adresse d&#39;un fichier et un taux de similarité</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<a class="code" href="../../dd/dc7/structrecherche.html">RECHERCHE</a> * <a class="code" href="../../dd/d36/recherche_8h.html#a33ec2142ebd5fcff77c86575a0216465">creerRechercheVide</a> ();                              <span class="comment">// Crée une file triée recherche vide</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d36/recherche_8h.html#ae00f0dc9c70d01d2b17f6acac16174fa">ajouterFichierRecherche</a> (<a class="code" href="../../dd/dc7/structrecherche.html">RECHERCHE</a> *, <a class="code" href="../../df/d9d/structfichier.html">FICHIER</a> *);          <span class="comment">// Ajoute une cellule fichier dans la file en la triant (par ordre décroissant)</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d36/recherche_8h.html#a78941d6074f13279f989e70a27a21541">afficherResultats</a>(<a class="code" href="../../dd/dc7/structrecherche.html">RECHERCHE</a> *r, <span class="keywordtype">int</span> typeRecherche);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/* FONCTIONS DE RECHERCHE PAR FICHIER */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// /!\ IMPORTANT : ces fonctions ont besoin de toutes les fonctions de manipulation/création de descripteur pour pouvoir fonctionner</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="../../dd/dc7/structrecherche.html">RECHERCHE</a> * <a class="code" href="../../dd/d36/recherche_8h.html#ac3d4a986c18e3c52328a75bd538b2bee">rechercheParFichierTexte</a> (<span class="keywordtype">char</span> *);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="../../dd/dc7/structrecherche.html">RECHERCHE</a> * <a class="code" href="../../dd/d36/recherche_8h.html#aec7ab0c48816409232db5052a356dc4e">rechercheParMotCle</a>(<span class="keywordtype">char</span> * mot); </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="../../dd/dc7/structrecherche.html">RECHERCHE</a> * <a class="code" href="../../dd/d36/recherche_8h.html#aef45caf7b3bb2f5485b0b95a8fe43b13">rechercheParFichierImage</a> (<span class="keywordtype">char</span> *);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="../../dd/dc7/structrecherche.html">RECHERCHE</a> * <a class="code" href="../../dd/d36/recherche_8h.html#a9c266f35bdc13b58b1910edcb278326f">rechercheParFichierSon</a> (<span class="keywordtype">char</span> *);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// Pour chacune de ces fonctions, renvoie la liste triée des fichiers les plus similaires à celui dont l&#39;adresse est passée en paramètre</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructfichier_html_ac6527eab0882196eb8c1c00887cd1e70"><div class="ttname"><a href="../../df/d9d/structfichier.html#ac6527eab0882196eb8c1c00887cd1e70">fichier::tps</a></div><div class="ttdeci">int * tps</div><div class="ttdef"><b>Definition:</b> recherche.h:11</div></div>
+<div class="ttc" id="arecherche_8h_html_ae00f0dc9c70d01d2b17f6acac16174fa"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#ae00f0dc9c70d01d2b17f6acac16174fa">ajouterFichierRecherche</a></div><div class="ttdeci">void ajouterFichierRecherche(RECHERCHE *, FICHIER *)</div><div class="ttdef"><b>Definition:</b> recherche.c:78</div></div>
+<div class="ttc" id="arecherche_8h_html_ac6ee443959f1da0b703fbdbaa9cca476"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#ac6ee443959f1da0b703fbdbaa9cca476">initCelluleFichier</a></div><div class="ttdeci">FICHIER * initCelluleFichier()</div><div class="ttdef"><b>Definition:</b> recherche.c:26</div></div>
+<div class="ttc" id="arecherche_8h_html_a78941d6074f13279f989e70a27a21541"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#a78941d6074f13279f989e70a27a21541">afficherResultats</a></div><div class="ttdeci">void afficherResultats(RECHERCHE *r, int typeRecherche)</div><div class="ttdef"><b>Definition:</b> recherche.c:108</div></div>
+<div class="ttc" id="astructfichier_html_aa58e296b2b66e04d38d39cd0099d03cb"><div class="ttname"><a href="../../df/d9d/structfichier.html#aa58e296b2b66e04d38d39cd0099d03cb">fichier::adresse</a></div><div class="ttdeci">char * adresse</div><div class="ttdef"><b>Definition:</b> recherche.h:9</div></div>
+<div class="ttc" id="arecherche_8h_html_ab90525ba232c59d991ca1485b5bd82c6"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#ab90525ba232c59d991ca1485b5bd82c6">creerCelluleFichierSon</a></div><div class="ttdeci">FICHIER * creerCelluleFichierSon(char *, PILE)</div><div class="ttdef"><b>Definition:</b> recherche.c:35</div></div>
+<div class="ttc" id="astructrecherche_html_ab7ff9c2fe4837efc6eea1e38de15143a"><div class="ttname"><a href="../../dd/dc7/structrecherche.html#ab7ff9c2fe4837efc6eea1e38de15143a">recherche::dernier</a></div><div class="ttdeci">FICHIER * dernier</div><div class="ttdef"><b>Definition:</b> recherche.h:19</div></div>
+<div class="ttc" id="arecherche_8h_html_a579d9422daf4ee57d84136c947de939e"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#a579d9422daf4ee57d84136c947de939e">creerCelluleFichier</a></div><div class="ttdeci">FICHIER * creerCelluleFichier(char *, float)</div><div class="ttdef"><b>Definition:</b> recherche.c:54</div></div>
+<div class="ttc" id="arecherche_8h_html_aef45caf7b3bb2f5485b0b95a8fe43b13"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#aef45caf7b3bb2f5485b0b95a8fe43b13">rechercheParFichierImage</a></div><div class="ttdeci">RECHERCHE * rechercheParFichierImage(char *)</div><div class="ttdef"><b>Definition:</b> recherche.c:288</div></div>
+<div class="ttc" id="astructfichier_html_a971a20c4631ad0522f73e67874f0b295"><div class="ttname"><a href="../../df/d9d/structfichier.html#a971a20c4631ad0522f73e67874f0b295">fichier::suivant</a></div><div class="ttdeci">struct fichier * suivant</div><div class="ttdef"><b>Definition:</b> recherche.h:13</div></div>
+<div class="ttc" id="astructfichier_html"><div class="ttname"><a href="../../df/d9d/structfichier.html">fichier</a></div><div class="ttdef"><b>Definition:</b> recherche.h:8</div></div>
+<div class="ttc" id="arecherche_8h_html_aec7ab0c48816409232db5052a356dc4e"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#aec7ab0c48816409232db5052a356dc4e">rechercheParMotCle</a></div><div class="ttdeci">RECHERCHE * rechercheParMotCle(char *mot)</div><div class="ttdef"><b>Definition:</b> recherche.c:175</div></div>
+<div class="ttc" id="astructfichier_html_a409d4a371275e136aa9a4c2e1877f82a"><div class="ttname"><a href="../../df/d9d/structfichier.html#a409d4a371275e136aa9a4c2e1877f82a">fichier::precedent</a></div><div class="ttdeci">struct fichier * precedent</div><div class="ttdef"><b>Definition:</b> recherche.h:12</div></div>
+<div class="ttc" id="arecherche_8h_html_a283f26c5507f42bfcf382431d9ccacb8"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#a283f26c5507f42bfcf382431d9ccacb8">FICHIER</a></div><div class="ttdeci">struct fichier FICHIER</div></div>
+<div class="ttc" id="astructrecherche_html_ae7ab51a89a2f307ce1239bfb5de9bcd9"><div class="ttname"><a href="../../dd/dc7/structrecherche.html#ae7ab51a89a2f307ce1239bfb5de9bcd9">recherche::premier</a></div><div class="ttdeci">FICHIER * premier</div><div class="ttdef"><b>Definition:</b> recherche.h:18</div></div>
+<div class="ttc" id="astruct_c_e_l_l_u_l_e_html"><div class="ttname"><a href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">CELLULE</a></div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.h:15</div></div>
+<div class="ttc" id="arecherche_8h_html_a9c266f35bdc13b58b1910edcb278326f"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#a9c266f35bdc13b58b1910edcb278326f">rechercheParFichierSon</a></div><div class="ttdeci">RECHERCHE * rechercheParFichierSon(char *)</div><div class="ttdef"><b>Definition:</b> recherche.c:368</div></div>
+<div class="ttc" id="astructrecherche_html"><div class="ttname"><a href="../../dd/dc7/structrecherche.html">recherche</a></div><div class="ttdef"><b>Definition:</b> recherche.h:17</div></div>
+<div class="ttc" id="arecherche_8h_html_a33ec2142ebd5fcff77c86575a0216465"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#a33ec2142ebd5fcff77c86575a0216465">creerRechercheVide</a></div><div class="ttdeci">RECHERCHE * creerRechercheVide()</div><div class="ttdef"><b>Definition:</b> recherche.c:68</div></div>
+<div class="ttc" id="arecherche_8h_html_af84df799a1dc8580d1bb2fb04941255f"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a></div><div class="ttdeci">struct recherche RECHERCHE</div></div>
+<div class="ttc" id="astructrecherche_html_a4ac185cf59f2ba43f95f9af810735f0f"><div class="ttname"><a href="../../dd/dc7/structrecherche.html#a4ac185cf59f2ba43f95f9af810735f0f">recherche::nbFichiers</a></div><div class="ttdeci">int nbFichiers</div><div class="ttdef"><b>Definition:</b> recherche.h:20</div></div>
+<div class="ttc" id="arecherche_8h_html_ac3d4a986c18e3c52328a75bd538b2bee"><div class="ttname"><a href="../../dd/d36/recherche_8h.html#ac3d4a986c18e3c52328a75bd538b2bee">rechercheParFichierTexte</a></div><div class="ttdeci">RECHERCHE * rechercheParFichierTexte(char *)</div><div class="ttdef"><b>Definition:</b> recherche.c:221</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html">pile_dynamiqueAudio.h</a></div></div>
+<div class="ttc" id="astructfichier_html_a0126d78967a704ca38cfdccad789a110"><div class="ttname"><a href="../../df/d9d/structfichier.html#a0126d78967a704ca38cfdccad789a110">fichier::similarite</a></div><div class="ttdeci">float similarite</div><div class="ttdef"><b>Definition:</b> recherche.h:10</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

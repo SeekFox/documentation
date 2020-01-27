@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SeekFox:  Fichier source de interact.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SeekFox
+   </div>
+   <div id="projectbrief">Partie 1 - Moteur de recherche</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">interact.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/d0f/interact_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#ae9e6460bc052bd049f5418795d0d1f1e">   12</a></span>&#160;<span class="preprocessor">#define __INTERACT__</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef CLEAR_STDIN</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#af56c9199d291aba7cb1a5433fb44ecd5">   19</a></span>&#160;<span class="preprocessor">    #define CLEAR_STDIN { int c; while((c = getchar()) != &#39;\n&#39; &amp;&amp; c != EOF); }</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef COLOR</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a7e3662e10fcd0bb440a524366d7fbc27">   29</a></span>&#160;<span class="preprocessor">    #define color(param) printf(&quot;\033[%sm&quot;,param)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1">   37</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1">FSM</a>{</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a0a041e18d712f7b239eac5375daf4a05">   38</a></span>&#160;    <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a0a041e18d712f7b239eac5375daf4a05">TITLE</a>,              <span class="comment">//Welcome</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a20391dd2915a0e64343d24c2f2e40b95">   39</a></span>&#160;    <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a20391dd2915a0e64343d24c2f2e40b95">CONNECT</a>,            <span class="comment">//Connect Page</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a3228e792244f936584abc6e3d7542d2c">   40</a></span>&#160;    <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a3228e792244f936584abc6e3d7542d2c">ADMIN</a>,              <span class="comment">//Admin interface</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a52d2c4def89a09fad6a1672cd86583b0">   41</a></span>&#160;    <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a52d2c4def89a09fad6a1672cd86583b0">RESEARCH</a>,           <span class="comment">//Recherche</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a49449775eb732bec8d719a9ab3234a02">   42</a></span>&#160;    <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a49449775eb732bec8d719a9ab3234a02">R_IMAGE</a>,            <span class="comment">//Recherche Image</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a5ed5c3c7ad9d2aafa95f397396b1d612">   43</a></span>&#160;    <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a5ed5c3c7ad9d2aafa95f397396b1d612">R_TEXTE</a>,            <span class="comment">//Recherche Texte</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a4a109aaa73ac9ce7c6586d0df8de30a7">   44</a></span>&#160;    <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a4a109aaa73ac9ce7c6586d0df8de30a7">R_SON</a>,              <span class="comment">//Recherche Son</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a0a1abcfa3da6edbadd28e0d23ef43529">   45</a></span>&#160;    <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a0a1abcfa3da6edbadd28e0d23ef43529">R_KEYWORD</a>,          <span class="comment">//Recherche Mot-Clef</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a141320940090595e2e9fa0bd22f781f6">   46</a></span>&#160;    <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a141320940090595e2e9fa0bd22f781f6">R_COLOR</a>,            <span class="comment">//Recherche Couleur Dominante</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a748005382152808a72b1a9177d9dc806">   47</a></span>&#160;    <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a748005382152808a72b1a9177d9dc806">INFO</a>,               <span class="comment">//Informations</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1adc6f24fd6915a3f2786a1b7045406924">   48</a></span>&#160;    <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1adc6f24fd6915a3f2786a1b7045406924">END</a>,                <span class="comment">//Goodbye !</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}<a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1">FSM</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0f/interact_8h.html#adc13b3c382f6d9a62651cb2f1af34f2f">displayMenu</a>(<span class="keywordtype">int</span> *isAdmin, <span class="keyword">enum</span> <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1">FSM</a> * state, <span class="keywordtype">char</span> * file);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0f/interact_8h.html#a7d0216833a4d051c2368c9fd55692e10">displayMenuResearch</a>(<span class="keywordtype">char</span> * file, <span class="keyword">enum</span> <a class="code" href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1">FSM</a> * state);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0f/interact_8h.html#a9b6276bc5cc1e916ed2328c997b9a5b7">displayMenuAdmin</a>(<span class="keywordtype">int</span> *isAdmin);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0f/interact_8h.html#a9cb72d12f25866bfa7bc8e737a68dd96">displayMenuAdminConfig</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0f/interact_8h.html#a5d764923cdeee42879ff878684456787">displayMenuAdminIndexation</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0f/interact_8h.html#a49d3d3dc66e3437b64dcb78b3332d590">displayInformations</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0f/interact_8h.html#aa29b7a8768702651bb46750654e9e133">displayError</a>(<span class="keywordtype">char</span> * msg);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0f/interact_8h.html#a9d7f2778c4ad00a655add3434662bad3">printTitle</a>(<span class="keywordtype">char</span> * msg);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0f/interact_8h.html#acf080d4a2fbb0265b94f4f40c21359b1">printSeekFox</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d0f/interact_8h.html#afd42b76ecf1b299d1728ec0b8ff00303">connectAdmin</a>(<span class="keywordtype">int</span> * isAdmin);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../da/d0f/interact_8h.html#a160f6d2893bb6b89ab3ad5d863c20e3d">getch</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../da/d0f/interact_8h.html#afe96bcade12b025a1b18b5aba6614642">convertStringChoiceToInt</a>(<span class="keywordtype">char</span> * str, <span class="keywordtype">int</span> max);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code" href="../../da/d0f/interact_8h.html#ab18e9efedf7b0c58262edec985b65aaa">getExtensionOfFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * file);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="../../da/d0f/interact_8h.html#a9e6668846bb78345bd392e4166795617">getNameOfFile</a>(<span class="keywordtype">char</span> * file);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1a49449775eb732bec8d719a9ab3234a02"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a49449775eb732bec8d719a9ab3234a02">R_IMAGE</a></div><div class="ttdeci">@ R_IMAGE</div><div class="ttdef"><b>Definition:</b> interact.h:42</div></div>
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1a0a041e18d712f7b239eac5375daf4a05"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a0a041e18d712f7b239eac5375daf4a05">TITLE</a></div><div class="ttdeci">@ TITLE</div><div class="ttdef"><b>Definition:</b> interact.h:38</div></div>
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1a0a1abcfa3da6edbadd28e0d23ef43529"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a0a1abcfa3da6edbadd28e0d23ef43529">R_KEYWORD</a></div><div class="ttdeci">@ R_KEYWORD</div><div class="ttdef"><b>Definition:</b> interact.h:45</div></div>
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1a5ed5c3c7ad9d2aafa95f397396b1d612"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a5ed5c3c7ad9d2aafa95f397396b1d612">R_TEXTE</a></div><div class="ttdeci">@ R_TEXTE</div><div class="ttdef"><b>Definition:</b> interact.h:43</div></div>
+<div class="ttc" id="ainteract_8h_html_a160f6d2893bb6b89ab3ad5d863c20e3d"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a160f6d2893bb6b89ab3ad5d863c20e3d">getch</a></div><div class="ttdeci">int getch()</div><div class="ttdef"><b>Definition:</b> interact.c:448</div></div>
+<div class="ttc" id="ainteract_8h_html_afd42b76ecf1b299d1728ec0b8ff00303"><div class="ttname"><a href="../../da/d0f/interact_8h.html#afd42b76ecf1b299d1728ec0b8ff00303">connectAdmin</a></div><div class="ttdeci">void connectAdmin(int *isAdmin)</div><div class="ttdoc">Interface de connexion au compte admin.</div><div class="ttdef"><b>Definition:</b> interact.c:401</div></div>
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1a3228e792244f936584abc6e3d7542d2c"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a3228e792244f936584abc6e3d7542d2c">ADMIN</a></div><div class="ttdeci">@ ADMIN</div><div class="ttdef"><b>Definition:</b> interact.h:40</div></div>
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1a4a109aaa73ac9ce7c6586d0df8de30a7"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a4a109aaa73ac9ce7c6586d0df8de30a7">R_SON</a></div><div class="ttdeci">@ R_SON</div><div class="ttdef"><b>Definition:</b> interact.h:44</div></div>
+<div class="ttc" id="ainteract_8h_html_a9d7f2778c4ad00a655add3434662bad3"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a9d7f2778c4ad00a655add3434662bad3">printTitle</a></div><div class="ttdeci">void printTitle(char *msg)</div><div class="ttdoc">Ecrit un titre.</div><div class="ttdef"><b>Definition:</b> interact.c:381</div></div>
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1a141320940090595e2e9fa0bd22f781f6"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a141320940090595e2e9fa0bd22f781f6">R_COLOR</a></div><div class="ttdeci">@ R_COLOR</div><div class="ttdef"><b>Definition:</b> interact.h:46</div></div>
+<div class="ttc" id="ainteract_8h_html_a9e6668846bb78345bd392e4166795617"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a9e6668846bb78345bd392e4166795617">getNameOfFile</a></div><div class="ttdeci">char * getNameOfFile(char *file)</div><div class="ttdoc">Get the Name Of File object.</div><div class="ttdef"><b>Definition:</b> interact.c:347</div></div>
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1a748005382152808a72b1a9177d9dc806"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a748005382152808a72b1a9177d9dc806">INFO</a></div><div class="ttdeci">@ INFO</div><div class="ttdef"><b>Definition:</b> interact.h:47</div></div>
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1a52d2c4def89a09fad6a1672cd86583b0"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a52d2c4def89a09fad6a1672cd86583b0">RESEARCH</a></div><div class="ttdeci">@ RESEARCH</div><div class="ttdef"><b>Definition:</b> interact.h:41</div></div>
+<div class="ttc" id="ainteract_8h_html_ab18e9efedf7b0c58262edec985b65aaa"><div class="ttname"><a href="../../da/d0f/interact_8h.html#ab18e9efedf7b0c58262edec985b65aaa">getExtensionOfFile</a></div><div class="ttdeci">const char * getExtensionOfFile(const char *file)</div><div class="ttdoc">Get the Extension Of File object.</div><div class="ttdef"><b>Definition:</b> interact.c:341</div></div>
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1a20391dd2915a0e64343d24c2f2e40b95"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1a20391dd2915a0e64343d24c2f2e40b95">CONNECT</a></div><div class="ttdeci">@ CONNECT</div><div class="ttdef"><b>Definition:</b> interact.h:39</div></div>
+<div class="ttc" id="ainteract_8h_html_a9cb72d12f25866bfa7bc8e737a68dd96"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a9cb72d12f25866bfa7bc8e737a68dd96">displayMenuAdminConfig</a></div><div class="ttdeci">void displayMenuAdminConfig()</div><div class="ttdoc">Affiche le menu de configuration.</div><div class="ttdef"><b>Definition:</b> interact.c:221</div></div>
+<div class="ttc" id="ainteract_8h_html_afe96bcade12b025a1b18b5aba6614642"><div class="ttname"><a href="../../da/d0f/interact_8h.html#afe96bcade12b025a1b18b5aba6614642">convertStringChoiceToInt</a></div><div class="ttdeci">int convertStringChoiceToInt(char *str, int max)</div><div class="ttdoc">Convertis une chaine de caractere de choix en int.</div><div class="ttdef"><b>Definition:</b> interact.c:326</div></div>
+<div class="ttc" id="ainteract_8h_html_adc13b3c382f6d9a62651cb2f1af34f2f"><div class="ttname"><a href="../../da/d0f/interact_8h.html#adc13b3c382f6d9a62651cb2f1af34f2f">displayMenu</a></div><div class="ttdeci">void displayMenu(int *isAdmin, enum FSM *state, char *file)</div><div class="ttdoc">Affichage du menu.</div><div class="ttdef"><b>Definition:</b> interact.c:36</div></div>
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1adc6f24fd6915a3f2786a1b7045406924"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1adc6f24fd6915a3f2786a1b7045406924">END</a></div><div class="ttdeci">@ END</div><div class="ttdef"><b>Definition:</b> interact.h:48</div></div>
+<div class="ttc" id="ainteract_8h_html_aa29b7a8768702651bb46750654e9e133"><div class="ttname"><a href="../../da/d0f/interact_8h.html#aa29b7a8768702651bb46750654e9e133">displayError</a></div><div class="ttdeci">void displayError(char *msg)</div><div class="ttdoc">Affiche un message en erreur (affichage en rouge)</div><div class="ttdef"><b>Definition:</b> interact.c:375</div></div>
+<div class="ttc" id="ainteract_8h_html_a2aab568cd1f02e7cd9fd6c7f87e361d1"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a2aab568cd1f02e7cd9fd6c7f87e361d1">FSM</a></div><div class="ttdeci">FSM</div><div class="ttdoc">Machine à etat.</div><div class="ttdef"><b>Definition:</b> interact.h:37</div></div>
+<div class="ttc" id="ainteract_8h_html_acf080d4a2fbb0265b94f4f40c21359b1"><div class="ttname"><a href="../../da/d0f/interact_8h.html#acf080d4a2fbb0265b94f4f40c21359b1">printSeekFox</a></div><div class="ttdeci">void printSeekFox()</div><div class="ttdoc">Printf Big SeekFox.</div><div class="ttdef"><b>Definition:</b> interact.c:389</div></div>
+<div class="ttc" id="ainteract_8h_html_a7d0216833a4d051c2368c9fd55692e10"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a7d0216833a4d051c2368c9fd55692e10">displayMenuResearch</a></div><div class="ttdeci">void displayMenuResearch(char *file, enum FSM *state)</div><div class="ttdoc">Affichage de menu de recherche.</div><div class="ttdef"><b>Definition:</b> interact.c:116</div></div>
+<div class="ttc" id="ainteract_8h_html_a5d764923cdeee42879ff878684456787"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a5d764923cdeee42879ff878684456787">displayMenuAdminIndexation</a></div><div class="ttdeci">void displayMenuAdminIndexation()</div><div class="ttdoc">Affiche le menu pour lancer l'indexation.</div><div class="ttdef"><b>Definition:</b> interact.c:275</div></div>
+<div class="ttc" id="ainteract_8h_html_a9b6276bc5cc1e916ed2328c997b9a5b7"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a9b6276bc5cc1e916ed2328c997b9a5b7">displayMenuAdmin</a></div><div class="ttdeci">void displayMenuAdmin(int *isAdmin)</div><div class="ttdoc">Affichage du menu Admin.</div><div class="ttdef"><b>Definition:</b> interact.c:177</div></div>
+<div class="ttc" id="ainteract_8h_html_a49d3d3dc66e3437b64dcb78b3332d590"><div class="ttname"><a href="../../da/d0f/interact_8h.html#a49d3d3dc66e3437b64dcb78b3332d590">displayInformations</a></div><div class="ttdeci">void displayInformations()</div><div class="ttdoc">Affichage des informations du projet.</div><div class="ttdef"><b>Definition:</b> interact.c:364</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

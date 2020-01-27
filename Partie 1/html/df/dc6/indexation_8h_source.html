@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SeekFox:  Fichier source de indexation.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SeekFox
+   </div>
+   <div id="projectbrief">Partie 1 - Moteur de recherche</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">indexation.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../df/dc6/indexation_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef __INDEXATION__</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define __INDEXATION__</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d5/dad/structdesc.html">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d5/dad/structdesc.html">desc</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d5/dad/structdesc.html#a813741e5dfeb26fae36c1234fa57ed32">   19</a></span>&#160;    <span class="keywordtype">char</span> * <a class="code" href="../../d5/dad/structdesc.html#a813741e5dfeb26fae36c1234fa57ed32">strDesc</a>;         <span class="comment">// Pointeur vers la chaîne de caractères représentant le descripteur</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d5/dad/structdesc.html#aa219899462c4881d38794b0f741bcfb8">   20</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d5/dad/structdesc.html">desc</a> * <a class="code" href="../../d5/dad/structdesc.html#aa219899462c4881d38794b0f741bcfb8">suivant</a>;  <span class="comment">// Descripteur suivant dans la pile</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <a class="code" href="../../df/dc6/indexation_8h.html#a5eb0f5f54e537b96a4e40472510af858">DESC</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../dd/d6c/structpiledesc.html">   27</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../dd/d6c/structpiledesc.html">piledesc</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../dd/d6c/structpiledesc.html#a6df4fdf1d4d45d708d828b113d04f644">   28</a></span>&#160;    <a class="code" href="../../d5/dad/structdesc.html">DESC</a> * <a class="code" href="../../dd/d6c/structpiledesc.html#a6df4fdf1d4d45d708d828b113d04f644">premier</a>;         <span class="comment">// Premier descripteur de la pile</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../dd/d6c/structpiledesc.html#a36e2c815df91b368ca07b3ebe6d30551">   29</a></span>&#160;    <a class="code" href="../../d5/dad/structdesc.html">DESC</a> * <a class="code" href="../../dd/d6c/structpiledesc.html#a36e2c815df91b368ca07b3ebe6d30551">dernier</a>;         <span class="comment">// Dernier descripteur de la pile</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../dd/d6c/structpiledesc.html#a0f8c7ab4b240c74edb73d038547dcc5c">   30</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../dd/d6c/structpiledesc.html#a0f8c7ab4b240c74edb73d038547dcc5c">nbDesc</a>;             <span class="comment">// Nombre de descripteurs dans la pile</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <a class="code" href="../../df/dc6/indexation_8h.html#a69c523167012b6f8cd06d845d20e4903">PILEDESC</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/* FONCTIONS DE MANIPULATION DES STRUCTURES */</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="../../d5/dad/structdesc.html">DESC</a> * <a class="code" href="../../df/dc6/indexation_8h.html#a3dc2e4be467415f2a6877d374c5906d8">initDesc</a> ();     </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="../../d5/dad/structdesc.html">DESC</a> * <a class="code" href="../../df/dc6/indexation_8h.html#a7f154888c16bc6e469f1f187f3ba0440">creerDesc</a> (<span class="keywordtype">char</span> *);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<a class="code" href="../../dd/d6c/structpiledesc.html">PILEDESC</a> * <a class="code" href="../../df/dc6/indexation_8h.html#ae5c3f798b199991044e68e65cfd98cbe">creerPileDescVide</a> ();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/dc6/indexation_8h.html#a5a87a52628f2aa1551231e5fb08524b6">ajouterDescPile</a> (<a class="code" href="../../dd/d6c/structpiledesc.html">PILEDESC</a> *, <a class="code" href="../../d5/dad/structdesc.html">DESC</a> *);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">/* FONCTIONS UTILITAIRES DIVERSES */</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../df/dc6/indexation_8h.html#a6ad49bad7a9777369d851c78f00339a9">isFileExist</a>(<span class="keywordtype">char</span> * adrDoc);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../df/dc6/indexation_8h.html#a3dda9fb4b55a0386a80c2b5c1de979ef">dejaIndexe</a> (<span class="keywordtype">char</span> *);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../df/dc6/indexation_8h.html#a9a5f86ff22dc2d01fd1c7929e272da83">nbLignesFichier</a> (<span class="keywordtype">char</span> *);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/dc6/indexation_8h.html#adfbf439a69708e312cac85f6dc6912ef">supprLignesIndex</a> (<span class="keywordtype">int</span> *);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="../../df/dc6/indexation_8h.html#ae8cef399539a31f8a3e6eff436c196ac">moveFileInBDB</a>(<span class="keywordtype">char</span> * adrDoc);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/dc6/indexation_8h.html#a70044d1ee1f80465d9686ea69e5ba5a8">displayFichierIndexes</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">/* FONCTIONS D&#39;INDEXATION EFFECTIVE */</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/dc6/indexation_8h.html#a30ee32e7b16bacec8ad9c9d648658480">empilementDesDescripteurs</a> (<a class="code" href="../../dd/d6c/structpiledesc.html">PILEDESC</a> *, <a class="code" href="../../dd/d6c/structpiledesc.html">PILEDESC</a> *);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/dc6/indexation_8h.html#ab6500267782363f4e13514e1cd80d800">suppressionOrphelins</a> ();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/dc6/indexation_8h.html#abe8b8ccefa1b7bf3b511ad0417640e6d">indexationTotale</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/dc6/indexation_8h.html#a7ea3e8dc0be2571a9ffc96cea22d3fcf">indexationUnique</a> (<span class="keywordtype">char</span> * adrDoc);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/dc6/indexation_8h.html#ad34fd4b2dddc8bcc76815c0212733653">indexationAutomatique</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/dc6/indexation_8h.html#a513f87a481ff7a346a72200dbbfe0102">displayDescripteur</a>(<span class="keywordtype">char</span> * <a class="code" href="../../df/d9d/structfichier.html">fichier</a>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructpiledesc_html_a36e2c815df91b368ca07b3ebe6d30551"><div class="ttname"><a href="../../dd/d6c/structpiledesc.html#a36e2c815df91b368ca07b3ebe6d30551">piledesc::dernier</a></div><div class="ttdeci">DESC * dernier</div><div class="ttdef"><b>Definition:</b> indexation.h:29</div></div>
+<div class="ttc" id="astructpiledesc_html_a0f8c7ab4b240c74edb73d038547dcc5c"><div class="ttname"><a href="../../dd/d6c/structpiledesc.html#a0f8c7ab4b240c74edb73d038547dcc5c">piledesc::nbDesc</a></div><div class="ttdeci">int nbDesc</div><div class="ttdef"><b>Definition:</b> indexation.h:30</div></div>
+<div class="ttc" id="aindexation_8h_html_ab6500267782363f4e13514e1cd80d800"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#ab6500267782363f4e13514e1cd80d800">suppressionOrphelins</a></div><div class="ttdeci">void suppressionOrphelins()</div><div class="ttdoc">Retire de la liste des fichiers indexés les fichiers qui ne sont plus dans la base de documents.</div><div class="ttdef"><b>Definition:</b> indexation.c:440</div></div>
+<div class="ttc" id="aindexation_8h_html_ae8cef399539a31f8a3e6eff436c196ac"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#ae8cef399539a31f8a3e6eff436c196ac">moveFileInBDB</a></div><div class="ttdeci">char * moveFileInBDB(char *adrDoc)</div><div class="ttdoc">Place le fichier adrDoc dans le repertoire base_de_documents.</div><div class="ttdef"><b>Definition:</b> indexation.c:180</div></div>
+<div class="ttc" id="aindexation_8h_html_ad34fd4b2dddc8bcc76815c0212733653"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#ad34fd4b2dddc8bcc76815c0212733653">indexationAutomatique</a></div><div class="ttdeci">void indexationAutomatique()</div><div class="ttdoc">MODE AUTOMATIQUE : si rien d'indexé, fait une indexation totale, sinon supprime les descripteurs orph...</div><div class="ttdef"><b>Definition:</b> indexation.c:476</div></div>
+<div class="ttc" id="aindexation_8h_html_a30ee32e7b16bacec8ad9c9d648658480"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a30ee32e7b16bacec8ad9c9d648658480">empilementDesDescripteurs</a></div><div class="ttdeci">void empilementDesDescripteurs(PILEDESC *, PILEDESC *)</div><div class="ttdoc">Fait l'indexation de tous les fichiers de la base de document et met les descripteurs dans p1,...</div><div class="ttdef"><b>Definition:</b> indexation.c:251</div></div>
+<div class="ttc" id="aindexation_8h_html_a70044d1ee1f80465d9686ea69e5ba5a8"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a70044d1ee1f80465d9686ea69e5ba5a8">displayFichierIndexes</a></div><div class="ttdeci">void displayFichierIndexes()</div><div class="ttdoc">Affiche les fichiers déjà indexes.</div><div class="ttdef"><b>Definition:</b> indexation.c:190</div></div>
+<div class="ttc" id="aindexation_8h_html_abe8b8ccefa1b7bf3b511ad0417640e6d"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#abe8b8ccefa1b7bf3b511ad0417640e6d">indexationTotale</a></div><div class="ttdeci">void indexationTotale()</div><div class="ttdoc">Refait l'indexation de 0, utilisé au premier lancement ou par lancement manuel - PREMIER MODE MANUEL.</div><div class="ttdef"><b>Definition:</b> indexation.c:320</div></div>
+<div class="ttc" id="aindexation_8h_html_a9a5f86ff22dc2d01fd1c7929e272da83"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a9a5f86ff22dc2d01fd1c7929e272da83">nbLignesFichier</a></div><div class="ttdeci">int nbLignesFichier(char *)</div><div class="ttdoc">Renvoie le nombre de lignes du fichier dont l'adresse est passée en paramètre.</div><div class="ttdef"><b>Definition:</b> indexation.c:116</div></div>
+<div class="ttc" id="aindexation_8h_html_a3dda9fb4b55a0386a80c2b5c1de979ef"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a3dda9fb4b55a0386a80c2b5c1de979ef">dejaIndexe</a></div><div class="ttdeci">int dejaIndexe(char *)</div><div class="ttdoc">Renvoie 0 si le fichier dont l'adresse est passée en paramètre est déjà indexé, 1 sinon.</div><div class="ttdef"><b>Definition:</b> indexation.c:94</div></div>
+<div class="ttc" id="astructfichier_html"><div class="ttname"><a href="../../df/d9d/structfichier.html">fichier</a></div><div class="ttdef"><b>Definition:</b> recherche.h:8</div></div>
+<div class="ttc" id="astructpiledesc_html_a6df4fdf1d4d45d708d828b113d04f644"><div class="ttname"><a href="../../dd/d6c/structpiledesc.html#a6df4fdf1d4d45d708d828b113d04f644">piledesc::premier</a></div><div class="ttdeci">DESC * premier</div><div class="ttdef"><b>Definition:</b> indexation.h:28</div></div>
+<div class="ttc" id="astructdesc_html_aa219899462c4881d38794b0f741bcfb8"><div class="ttname"><a href="../../d5/dad/structdesc.html#aa219899462c4881d38794b0f741bcfb8">desc::suivant</a></div><div class="ttdeci">struct desc * suivant</div><div class="ttdef"><b>Definition:</b> indexation.h:20</div></div>
+<div class="ttc" id="aindexation_8h_html_adfbf439a69708e312cac85f6dc6912ef"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#adfbf439a69708e312cac85f6dc6912ef">supprLignesIndex</a></div><div class="ttdeci">void supprLignesIndex(int *)</div><div class="ttdoc">Supprime les lignes dont les numéros sont passés en paramètre de la liste des fichiers indexés.</div><div class="ttdef"><b>Definition:</b> indexation.c:142</div></div>
+<div class="ttc" id="aindexation_8h_html_a69c523167012b6f8cd06d845d20e4903"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a69c523167012b6f8cd06d845d20e4903">PILEDESC</a></div><div class="ttdeci">struct piledesc PILEDESC</div><div class="ttdoc">Structure contenant la pile de descripteurs.</div></div>
+<div class="ttc" id="aindexation_8h_html_ae5c3f798b199991044e68e65cfd98cbe"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#ae5c3f798b199991044e68e65cfd98cbe">creerPileDescVide</a></div><div class="ttdeci">PILEDESC * creerPileDescVide()</div><div class="ttdoc">Crée une pile de descripteurs vide.</div><div class="ttdef"><b>Definition:</b> indexation.c:54</div></div>
+<div class="ttc" id="aindexation_8h_html_a3dc2e4be467415f2a6877d374c5906d8"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a3dc2e4be467415f2a6877d374c5906d8">initDesc</a></div><div class="ttdeci">DESC * initDesc()</div><div class="ttdoc">Crée une cellule descripteur vide.</div><div class="ttdef"><b>Definition:</b> indexation.c:34</div></div>
+<div class="ttc" id="aindexation_8h_html_a5eb0f5f54e537b96a4e40472510af858"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a5eb0f5f54e537b96a4e40472510af858">DESC</a></div><div class="ttdeci">struct desc DESC</div><div class="ttdoc">Cellule de la pile contenant un descripteur.</div></div>
+<div class="ttc" id="aindexation_8h_html_a513f87a481ff7a346a72200dbbfe0102"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a513f87a481ff7a346a72200dbbfe0102">displayDescripteur</a></div><div class="ttdeci">void displayDescripteur(char *fichier)</div><div class="ttdoc">Affiche le descripteur du fichier.</div><div class="ttdef"><b>Definition:</b> indexation.c:502</div></div>
+<div class="ttc" id="astructdesc_html"><div class="ttname"><a href="../../d5/dad/structdesc.html">desc</a></div><div class="ttdoc">Cellule de la pile contenant un descripteur.</div><div class="ttdef"><b>Definition:</b> indexation.h:18</div></div>
+<div class="ttc" id="aindexation_8h_html_a7f154888c16bc6e469f1f187f3ba0440"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a7f154888c16bc6e469f1f187f3ba0440">creerDesc</a></div><div class="ttdeci">DESC * creerDesc(char *)</div><div class="ttdoc">Ajoute une cellule descripteur à partir de la chaîne de caractères le représentant.</div><div class="ttdef"><b>Definition:</b> indexation.c:41</div></div>
+<div class="ttc" id="aindexation_8h_html_a6ad49bad7a9777369d851c78f00339a9"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a6ad49bad7a9777369d851c78f00339a9">isFileExist</a></div><div class="ttdeci">int isFileExist(char *adrDoc)</div><div class="ttdoc">Renvoie 1 si le fichier dont l'adresse est passée en paramètre existe et est lisible,...</div><div class="ttdef"><b>Definition:</b> indexation.c:83</div></div>
+<div class="ttc" id="aindexation_8h_html_a7ea3e8dc0be2571a9ffc96cea22d3fcf"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a7ea3e8dc0be2571a9ffc96cea22d3fcf">indexationUnique</a></div><div class="ttdeci">void indexationUnique(char *adrDoc)</div><div class="ttdoc">Fait l'indexation d'un fichier dont l'adresse est donnée en paramètre - DEUXIEME MODE MANUEL.</div><div class="ttdef"><b>Definition:</b> indexation.c:360</div></div>
+<div class="ttc" id="aindexation_8h_html_a5a87a52628f2aa1551231e5fb08524b6"><div class="ttname"><a href="../../df/dc6/indexation_8h.html#a5a87a52628f2aa1551231e5fb08524b6">ajouterDescPile</a></div><div class="ttdeci">void ajouterDescPile(PILEDESC *, DESC *)</div><div class="ttdoc">Ajoute un descripteur à la pile.</div><div class="ttdef"><b>Definition:</b> indexation.c:64</div></div>
+<div class="ttc" id="astructpiledesc_html"><div class="ttname"><a href="../../dd/d6c/structpiledesc.html">piledesc</a></div><div class="ttdoc">Structure contenant la pile de descripteurs.</div><div class="ttdef"><b>Definition:</b> indexation.h:27</div></div>
+<div class="ttc" id="astructdesc_html_a813741e5dfeb26fae36c1234fa57ed32"><div class="ttname"><a href="../../d5/dad/structdesc.html#a813741e5dfeb26fae36c1234fa57ed32">desc::strDesc</a></div><div class="ttdeci">char * strDesc</div><div class="ttdef"><b>Definition:</b> indexation.h:19</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

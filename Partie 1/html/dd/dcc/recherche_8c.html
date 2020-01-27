@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SeekFox: Référence du fichier recherche.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SeekFox
+   </div>
+   <div id="projectbrief">Partie 1 - Moteur de recherche</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier recherche.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions gerant la recherche.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d36/recherche_8h_source.html">../include/recherche.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dc6/indexation_8h_source.html">../include/indexation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d09/audio_8h_source.html">../include/audio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d16/config_8h_source.html">../include/config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d0f/interact_8h_source.html">../include/interact.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d61/header__image_8h_source.html">../include/header_image.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/ddb/texte_8h_source.html">../include/texte.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ac6ee443959f1da0b703fbdbaa9cca476"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d36/recherche_8h.html#a283f26c5507f42bfcf382431d9ccacb8">FICHIER</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dcc/recherche_8c.html#ac6ee443959f1da0b703fbdbaa9cca476">initCelluleFichier</a> ()</td></tr>
+<tr class="separator:ac6ee443959f1da0b703fbdbaa9cca476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ac4a5cf1c42ac0cc165a5cc790a7ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d36/recherche_8h.html#a283f26c5507f42bfcf382431d9ccacb8">FICHIER</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dcc/recherche_8c.html#ab0ac4a5cf1c42ac0cc165a5cc790a7ae">creerCelluleFichierSon</a> (char *nom, <a class="el" href="../../d6/dbb/pile__dynamique_audio_8h.html#ae5d2ff1b3a380f8e192cfe08dc194cad">PILE</a> sim)</td></tr>
+<tr class="separator:ab0ac4a5cf1c42ac0cc165a5cc790a7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25154d2e015b7dd97998dcf4ac0291b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d36/recherche_8h.html#a283f26c5507f42bfcf382431d9ccacb8">FICHIER</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dcc/recherche_8c.html#a25154d2e015b7dd97998dcf4ac0291b1">creerCelluleFichier</a> (char *nom, float sim)</td></tr>
+<tr class="separator:a25154d2e015b7dd97998dcf4ac0291b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ec2142ebd5fcff77c86575a0216465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dcc/recherche_8c.html#a33ec2142ebd5fcff77c86575a0216465">creerRechercheVide</a> ()</td></tr>
+<tr class="separator:a33ec2142ebd5fcff77c86575a0216465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b5fe5c56a8d083a68db78de60d86273"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dcc/recherche_8c.html#a3b5fe5c56a8d083a68db78de60d86273">ajouterFichierRecherche</a> (<a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a> *r, <a class="el" href="../../dd/d36/recherche_8h.html#a283f26c5507f42bfcf382431d9ccacb8">FICHIER</a> *f)</td></tr>
+<tr class="separator:a3b5fe5c56a8d083a68db78de60d86273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78941d6074f13279f989e70a27a21541"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dcc/recherche_8c.html#a78941d6074f13279f989e70a27a21541">afficherResultats</a> (<a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a> *r, int typeRecherche)</td></tr>
+<tr class="separator:a78941d6074f13279f989e70a27a21541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7ab0c48816409232db5052a356dc4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dcc/recherche_8c.html#aec7ab0c48816409232db5052a356dc4e">rechercheParMotCle</a> (char *mot)</td></tr>
+<tr class="separator:aec7ab0c48816409232db5052a356dc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5443d8a79fb08611392c9e3a5f39470"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dcc/recherche_8c.html#ad5443d8a79fb08611392c9e3a5f39470">rechercheParFichierTexte</a> (char *<a class="el" href="../../df/d9d/structfichier.html">fichier</a>)</td></tr>
+<tr class="separator:ad5443d8a79fb08611392c9e3a5f39470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1480c2fce424861a0a210a16b1a33a47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dcc/recherche_8c.html#a1480c2fce424861a0a210a16b1a33a47">rechercheParFichierImage</a> (char *<a class="el" href="../../df/d9d/structfichier.html">fichier</a>)</td></tr>
+<tr class="separator:a1480c2fce424861a0a210a16b1a33a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9ea0a6c79ec3ef64a3f0511c940ff1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dcc/recherche_8c.html#ace9ea0a6c79ec3ef64a3f0511c940ff1">rechercheParFichierSon</a> (char *<a class="el" href="../../df/d9d/structfichier.html">fichier</a>)</td></tr>
+<tr class="separator:ace9ea0a6c79ec3ef64a3f0511c940ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions gerant la recherche. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Etienne Combelles </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>24/01/2020</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2020 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a78941d6074f13279f989e70a27a21541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78941d6074f13279f989e70a27a21541">&#9670;&nbsp;</a></span>afficherResultats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherResultats </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a> *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>typeRecherche</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b5fe5c56a8d083a68db78de60d86273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b5fe5c56a8d083a68db78de60d86273">&#9670;&nbsp;</a></span>ajouterFichierRecherche()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ajouterFichierRecherche </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a> *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d36/recherche_8h.html#a283f26c5507f42bfcf382431d9ccacb8">FICHIER</a> *&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25154d2e015b7dd97998dcf4ac0291b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25154d2e015b7dd97998dcf4ac0291b1">&#9670;&nbsp;</a></span>creerCelluleFichier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d36/recherche_8h.html#a283f26c5507f42bfcf382431d9ccacb8">FICHIER</a>* creerCelluleFichier </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>sim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0ac4a5cf1c42ac0cc165a5cc790a7ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ac4a5cf1c42ac0cc165a5cc790a7ae">&#9670;&nbsp;</a></span>creerCelluleFichierSon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d36/recherche_8h.html#a283f26c5507f42bfcf382431d9ccacb8">FICHIER</a>* creerCelluleFichierSon </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/dbb/pile__dynamique_audio_8h.html#ae5d2ff1b3a380f8e192cfe08dc194cad">PILE</a>&#160;</td>
+          <td class="paramname"><em>sim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33ec2142ebd5fcff77c86575a0216465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33ec2142ebd5fcff77c86575a0216465">&#9670;&nbsp;</a></span>creerRechercheVide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a>* creerRechercheVide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6ee443959f1da0b703fbdbaa9cca476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ee443959f1da0b703fbdbaa9cca476">&#9670;&nbsp;</a></span>initCelluleFichier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d36/recherche_8h.html#a283f26c5507f42bfcf382431d9ccacb8">FICHIER</a>* initCelluleFichier </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1480c2fce424861a0a210a16b1a33a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1480c2fce424861a0a210a16b1a33a47">&#9670;&nbsp;</a></span>rechercheParFichierImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a>* rechercheParFichierImage </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>fichier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace9ea0a6c79ec3ef64a3f0511c940ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9ea0a6c79ec3ef64a3f0511c940ff1">&#9670;&nbsp;</a></span>rechercheParFichierSon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a>* rechercheParFichierSon </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>fichier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5443d8a79fb08611392c9e3a5f39470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5443d8a79fb08611392c9e3a5f39470">&#9670;&nbsp;</a></span>rechercheParFichierTexte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a>* rechercheParFichierTexte </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>fichier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec7ab0c48816409232db5052a356dc4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec7ab0c48816409232db5052a356dc4e">&#9670;&nbsp;</a></span>rechercheParMotCle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d36/recherche_8h.html#af84df799a1dc8580d1bb2fb04941255f">RECHERCHE</a>* rechercheParMotCle </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>mot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

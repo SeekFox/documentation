@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SeekFox:  Fichier source de pile_dynamiqueAudio.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SeekFox
+   </div>
+   <div id="projectbrief">Partie 1 - Moteur de recherche</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">pile_dynamiqueAudio.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d6/dbb/pile__dynamique_audio_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef DYNAMIQUE_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define DYNAMIQUE_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../include/elementAudio.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">   15</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">CELLULE</a>{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html#ab6102fe0aa274e4bdf6193caf64acf7a">   16</a></span>&#160;    <a class="code" href="../../d1/dc9/struct_e_l_e_m_e_n_t.html">ELEMENT</a> <a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html#ab6102fe0aa274e4bdf6193caf64acf7a">valeur</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html#a65e2a59943b582d15ce4ede91f77c9ee">   17</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">CELLULE</a>* <a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html#a65e2a59943b582d15ce4ede91f77c9ee">nextCell</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}<a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#aee1df6dffac7c3d9c5f14c50790d078e">CELLULE</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d6/dbb/pile__dynamique_audio_8h.html#ae5d2ff1b3a380f8e192cfe08dc194cad">   20</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">CELLULE</a>* <a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#ae5d2ff1b3a380f8e192cfe08dc194cad">PILE</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> <a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#a45fa281dd61b27099625e9f1b823d64a">init_PILE</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#a3400b09d2b13a7fa78c4271df01e9432">affiche_PILE</a>(<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> display);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#a719e9f00f581f1a643ad2002e6fc953c">PILE_estVide</a>(<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> pileVide);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> <a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#a0d2dd34c3ed4399f15a85e829ceab80b">emPILE</a>(<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> p_oldPile, <a class="code" href="../../d1/dc9/struct_e_l_e_m_e_n_t.html">ELEMENT</a> e);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> <a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#aad87e685ce1321ad3c2390bc0cf305ba">emPILEVal</a>(<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> p_oldPile, <span class="keywordtype">int</span> <a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html#ab6102fe0aa274e4bdf6193caf64acf7a">valeur</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> <a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#ada31ac960800be0494eb399cd9652e50">dePILE</a>(<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> newPile, <span class="keywordtype">int</span>* oldTete);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> <a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#a1ad4cbe26151593899a0acb9c2ac604e">coPILE</a>(<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> *cpy); <span class="comment">//ptdr le jeu de mots hahahahhahha je pleur</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#aca85a1dd5a017bf5c716104743c9518e">taillePILE</a>(<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> pileATester);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> <a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#a74deebb41f41a7336e8bd1a8553f627b">inversePILE</a>(<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> oldPile);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d6/dbb/pile__dynamique_audio_8h.html#a91e61f7146b9a4747bf5d41e12c16275">getElementValue</a>(<a class="code" href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">PILE</a> pileAVider, <span class="keywordtype">int</span> elementNb);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="apile__dynamique_audio_8h_html_a74deebb41f41a7336e8bd1a8553f627b"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#a74deebb41f41a7336e8bd1a8553f627b">inversePILE</a></div><div class="ttdeci">PILE inversePILE(PILE oldPile)</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.c:33</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html_aee1df6dffac7c3d9c5f14c50790d078e"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#aee1df6dffac7c3d9c5f14c50790d078e">CELLULE</a></div><div class="ttdeci">struct CELLULE CELLULE</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html_a45fa281dd61b27099625e9f1b823d64a"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#a45fa281dd61b27099625e9f1b823d64a">init_PILE</a></div><div class="ttdeci">PILE init_PILE()</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.c:16</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html_a3400b09d2b13a7fa78c4271df01e9432"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#a3400b09d2b13a7fa78c4271df01e9432">affiche_PILE</a></div><div class="ttdeci">void affiche_PILE(PILE display)</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.c:20</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html_ae5d2ff1b3a380f8e192cfe08dc194cad"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#ae5d2ff1b3a380f8e192cfe08dc194cad">PILE</a></div><div class="ttdeci">CELLULE * PILE</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.h:20</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html_a91e61f7146b9a4747bf5d41e12c16275"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#a91e61f7146b9a4747bf5d41e12c16275">getElementValue</a></div><div class="ttdeci">int getElementValue(PILE pileAVider, int elementNb)</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.c:135</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html_a0d2dd34c3ed4399f15a85e829ceab80b"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#a0d2dd34c3ed4399f15a85e829ceab80b">emPILE</a></div><div class="ttdeci">PILE emPILE(PILE p_oldPile, ELEMENT e)</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.c:62</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html_a719e9f00f581f1a643ad2002e6fc953c"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#a719e9f00f581f1a643ad2002e6fc953c">PILE_estVide</a></div><div class="ttdeci">int PILE_estVide(PILE pileVide)</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.c:78</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html_aad87e685ce1321ad3c2390bc0cf305ba"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#aad87e685ce1321ad3c2390bc0cf305ba">emPILEVal</a></div><div class="ttdeci">PILE emPILEVal(PILE p_oldPile, int valeur)</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.c:44</div></div>
+<div class="ttc" id="astruct_c_e_l_l_u_l_e_html"><div class="ttname"><a href="../../d4/d7b/struct_c_e_l_l_u_l_e.html">CELLULE</a></div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.h:15</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html_ada31ac960800be0494eb399cd9652e50"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#ada31ac960800be0494eb399cd9652e50">dePILE</a></div><div class="ttdeci">PILE dePILE(PILE newPile, int *oldTete)</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.c:86</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html_a1ad4cbe26151593899a0acb9c2ac604e"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#a1ad4cbe26151593899a0acb9c2ac604e">coPILE</a></div><div class="ttdeci">PILE coPILE(PILE *cpy)</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.c:103</div></div>
+<div class="ttc" id="astruct_c_e_l_l_u_l_e_html_ab6102fe0aa274e4bdf6193caf64acf7a"><div class="ttname"><a href="../../d4/d7b/struct_c_e_l_l_u_l_e.html#ab6102fe0aa274e4bdf6193caf64acf7a">CELLULE::valeur</a></div><div class="ttdeci">ELEMENT valeur</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.h:16</div></div>
+<div class="ttc" id="astruct_e_l_e_m_e_n_t_html"><div class="ttname"><a href="../../d1/dc9/struct_e_l_e_m_e_n_t.html">ELEMENT</a></div><div class="ttdef"><b>Definition:</b> elementAudio.h:13</div></div>
+<div class="ttc" id="astruct_c_e_l_l_u_l_e_html_a65e2a59943b582d15ce4ede91f77c9ee"><div class="ttname"><a href="../../d4/d7b/struct_c_e_l_l_u_l_e.html#a65e2a59943b582d15ce4ede91f77c9ee">CELLULE::nextCell</a></div><div class="ttdeci">struct CELLULE * nextCell</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.h:17</div></div>
+<div class="ttc" id="apile__dynamique_audio_8h_html_aca85a1dd5a017bf5c716104743c9518e"><div class="ttname"><a href="../../d6/dbb/pile__dynamique_audio_8h.html#aca85a1dd5a017bf5c716104743c9518e">taillePILE</a></div><div class="ttdeci">int taillePILE(PILE pileATester)</div><div class="ttdef"><b>Definition:</b> pile_dynamiqueAudio.c:125</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
